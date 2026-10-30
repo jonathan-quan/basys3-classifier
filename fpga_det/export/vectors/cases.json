@@ -1,0 +1,92 @@
+[
+  {
+    "case": 0,
+    "id": "webcam_s1_cube_01090",
+    "label": 0,
+    "present": 1,
+    "path": "C:\\Users\\ndaqu\\Documents\\Basys3Classifier\\detection\\data\\webcam\\s1\\frames\\webcam_s1_cube_01090.jpg",
+    "result": [
+      966,
+      70,
+      -692,
+      -484,
+      2407,
+      28279,
+      24647,
+      -378,
+      -386
+    ]
+  },
+  {
+    "case": 1,
+    "id": "webcam_s1_pen_01100",
+    "label": 1,
+    "present": 1,
+    "path": "C:\\Users\\ndaqu\\Documents\\Basys3Classifier\\detection\\data\\webcam\\s1\\frames\\webcam_s1_pen_01100.jpg",
+    "result": [
+      -9,
+      599,
+      -446,
+      -133,
+      485,
+      32828,
+      27163,
+      70,
+      -382
+    ]
+  },
+  {
+    "case": 2,
+    "id": "webcam_s1_book_01200",
+    "label": 2,
+    "present": 1,
+    "path": "C:\\Users\\ndaqu\\Documents\\Basys3Classifier\\detection\\data\\webcam\\s1\\frames\\webcam_s1_book_01200.jpg",
+    "result": [
+      -985,
+      33,
+      704,
+      -216,
+      1379,
+      39138,
+      33167,
+      523,
+      -16
+    ]
+  },
+  {
+    "case": 3,
+    "id": "webcam_s1_mouse_01260",
+    "label": 3,
+    "present": 1,
+    "path": "C:\\Users\\ndaqu\\Documents\\Basys3Classifier\\detection\\data\\webcam\\s1\\frames\\webcam_s1_mouse_01260.jpg",
+    "result": [
+      29,
+      -358,
+      -685,
+      811,
+      1478,
+      30159,
+      28719,
+      -20,
+      -166
+    ]
+  },
+  {
+    "case": 4,
+    "id": "webcam_s1_empty_00740",
+    "label": -1,
+    "present": 0,
+    "path": "C:\\Users\\ndaqu\\Documents\\Basys3Classifier\\detection\\data\\webcam\\s1\\frames\\webcam_s1_empty_00740.jpg",
+    "result": [
+      -304,
+      900,
+      -125,
+      -289,
+      -1217,
+      32839,
+      38474,
+      143,
+      -363
+    ]
+  }
+]

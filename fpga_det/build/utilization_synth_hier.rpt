@@ -1,0 +1,32 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2026.1 (win64) Build 6511674 Tue Jun 16 11:02:23 MDT 2026
+| Date         : Fri Oct 30 12:39:29 2026
+| Host         : admin running 64-bit major release  (build 9200)
+| Command      : report_utilization -hierarchical -file fpga_det/build/utilization_synth_hier.rpt
+| Design       : basys3_detector
+| Device       : xc7a35tcpg236-1
+| Speed File   : -1
+| Design State : Synthesized
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Utilization Design Information
+
+Table of Contents
+-----------------
+1. Utilization by Hierarchy
+
+1. Utilization by Hierarchy
+---------------------------
+
++---------------------+---------------+------------+------------+---------+------+------+--------+--------+------------+
+|       Instance      |     Module    | Total LUTs | Logic LUTs | LUTRAMs | SRLs |  FFs | RAMB36 | RAMB18 | DSP Blocks |
++---------------------+---------------+------------+------------+---------+------+------+--------+--------+------------+
+| basys3_detector     |         (top) |       6676 |       6474 |     202 |    0 | 2157 |     33 |      1 |          7 |
+|   (basys3_detector) |         (top) |        171 |        171 |       0 |    0 |  795 |      0 |      0 |          0 |
+|   u_core            | detector_core |       6165 |       5963 |     202 |    0 | 1290 |     33 |      1 |          7 |
+|   u_rx              |       uart_rx |        287 |        287 |       0 |    0 |   42 |      0 |      0 |          0 |
+|   u_tx              |       uart_tx |         53 |         53 |       0 |    0 |   30 |      0 |      0 |          0 |
++---------------------+---------------+------------+------------+---------+------+------+--------+--------+------------+
+
+

@@ -1,0 +1,79 @@
+
+****** xsim v2026.1 (64-bit)
+  **** SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+  **** IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+  **** SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+  **** Start of session at: Fri Oct 30 12:27:43 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source xsim.dir/detector_core_sim/xsim_script.tcl
+# xsim {detector_core_sim} -autoloadwcfg -runall
+Time resolution is 1 ps
+run -all
+PASS case=0 layer=0 bytes=65536 cycle=7405619
+PASS case=0 layer=1 bytes=16384 cycle=8077412
+PASS case=0 layer=2 bytes=32768 cycle=10338501
+PASS case=0 layer=3 bytes=8192 cycle=10674470
+PASS case=0 layer=4 bytes=16384 cycle=12853735
+PASS case=0 layer=5 bytes=4096 cycle=13021864
+PASS case=0 layer=6 bytes=6144 cycle=14625737
+PASS case=0 layer=7 bytes=6144 cycle=14877930
+PASS case=0 layer=8 bytes=6144 cycle=17268235
+PASS case=0 layer=9 bytes=6144 cycle=17520428
+PASS case=0 layer=10 bytes=6144 cycle=19910733
+PASS FINAL case=0 class=0 presence=2407 cx=28279 cy=24647 size=-378,-386 cycles=20118456
+PASS case=1 layer=0 bytes=65536 cycle=7405619
+PASS case=1 layer=1 bytes=16384 cycle=8077412
+PASS case=1 layer=2 bytes=32768 cycle=10338501
+PASS case=1 layer=3 bytes=8192 cycle=10674470
+PASS case=1 layer=4 bytes=16384 cycle=12853735
+PASS case=1 layer=5 bytes=4096 cycle=13021864
+PASS case=1 layer=6 bytes=6144 cycle=14625737
+PASS case=1 layer=7 bytes=6144 cycle=14877930
+PASS case=1 layer=8 bytes=6144 cycle=17268235
+PASS case=1 layer=9 bytes=6144 cycle=17520428
+PASS case=1 layer=10 bytes=6144 cycle=19910733
+PASS FINAL case=1 class=1 presence=485 cx=32828 cy=27163 size=70,-382 cycles=20118456
+PASS case=2 layer=0 bytes=65536 cycle=7405619
+PASS case=2 layer=1 bytes=16384 cycle=8077412
+PASS case=2 layer=2 bytes=32768 cycle=10338501
+PASS case=2 layer=3 bytes=8192 cycle=10674470
+PASS case=2 layer=4 bytes=16384 cycle=12853735
+PASS case=2 layer=5 bytes=4096 cycle=13021864
+PASS case=2 layer=6 bytes=6144 cycle=14625737
+PASS case=2 layer=7 bytes=6144 cycle=14877930
+PASS case=2 layer=8 bytes=6144 cycle=17268235
+PASS case=2 layer=9 bytes=6144 cycle=17520428
+PASS case=2 layer=10 bytes=6144 cycle=19910733
+PASS FINAL case=2 class=2 presence=1379 cx=39138 cy=33167 size=523,-16 cycles=20118456
+PASS case=3 layer=0 bytes=65536 cycle=7405619
+PASS case=3 layer=1 bytes=16384 cycle=8077412
+PASS case=3 layer=2 bytes=32768 cycle=10338501
+PASS case=3 layer=3 bytes=8192 cycle=10674470
+PASS case=3 layer=4 bytes=16384 cycle=12853735
+PASS case=3 layer=5 bytes=4096 cycle=13021864
+PASS case=3 layer=6 bytes=6144 cycle=14625737
+PASS case=3 layer=7 bytes=6144 cycle=14877930
+PASS case=3 layer=8 bytes=6144 cycle=17268235
+PASS case=3 layer=9 bytes=6144 cycle=17520428
+PASS case=3 layer=10 bytes=6144 cycle=19910733
+PASS FINAL case=3 class=3 presence=1478 cx=30159 cy=28719 size=-20,-166 cycles=20118456
+PASS case=4 layer=0 bytes=65536 cycle=7405619
+PASS case=4 layer=1 bytes=16384 cycle=8077412
+PASS case=4 layer=2 bytes=32768 cycle=10338501
+PASS case=4 layer=3 bytes=8192 cycle=10674470
+PASS case=4 layer=4 bytes=16384 cycle=12853735
+PASS case=4 layer=5 bytes=4096 cycle=13021864
+PASS case=4 layer=6 bytes=6144 cycle=14625737
+PASS case=4 layer=7 bytes=6144 cycle=14877930
+PASS case=4 layer=8 bytes=6144 cycle=17268235
+PASS case=4 layer=9 bytes=6144 cycle=17520428
+PASS case=4 layer=10 bytes=6144 cycle=19910733
+PASS FINAL case=4 class=1 presence=-1217 cx=32839 cy=38474 size=143,-363 cycles=20118456
+ALL DETECTOR LAYERS, POOL, HEAT, ATTENTION AND BOX OUTPUTS MATCH
+$finish called at time : 1008381050 ns : File "C:/Users/ndaqu/Documents/Basys3Classifier/fpga_det/sim/tb_det_core.sv" Line 60
+run: Time (s): cpu = 00:00:00 ; elapsed = 00:01:14 . Memory (MB): peak = 228.078 ; gain = 0.000
+exit
+INFO: xsimkernel Simulation Memory Usage: 19704 KB (Peak: 19704 KB), Simulation CPU Usage: 73171 ms
+INFO: [Common 17-206] Exiting xsim at Fri Oct 30 12:28:59 2026...

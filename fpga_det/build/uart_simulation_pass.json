@@ -1,0 +1,6 @@
+{
+    "model_id_hex":  "9f3a486d6dae483d",
+    "cycles":  20118456,
+    "checks":  "HELLO, bad CRC, bad image config, full 128x128 image -\u003e exact 24-byte result packet",
+    "passed":  true
+}

@@ -1,0 +1,6 @@
+{
+    "model_id_hex":  "9f3a486d6dae483d",
+    "vectors":  5,
+    "checks":  "Every backbone byte (11 layers), pooled, heat map, attention, class/presence/box outputs",
+    "passed":  true
+}

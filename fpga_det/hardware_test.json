@@ -1,0 +1,194 @@
+{
+  "hardware_identity": {
+    "port": "COM6",
+    "baud": 1000000,
+    "model_id_hex": "9f3a486d6dae483d",
+    "input": [
+      128,
+      128,
+      3
+    ]
+  },
+  "vectors": [
+    {
+      "id": "webcam_s1_cube_01090",
+      "class_id": 0,
+      "status": 0,
+      "name": "Rubik's Cube",
+      "class_score": 0.9659923611056852,
+      "presence": 0.9999174764026472,
+      "score": 0.9659126439410314,
+      "box_cxcywh_letterbox": [
+        0.4315032958984375,
+        0.3760833740234375,
+        0.1859471949014217,
+        0.1812632068286302
+      ],
+      "raw": {
+        "class_logits_q8_8": [
+          966,
+          70,
+          -692,
+          -484
+        ],
+        "presence_q8_8": 2407,
+        "cx_q16": 28279,
+        "cy_q16": 24647,
+        "size_q8_8": [
+          -378,
+          -386
+        ]
+      },
+      "inference_cycles": 20118456,
+      "inference_ms": 201.18456,
+      "inference_location": "Basys 3 FPGA",
+      "roundtrip_ms": 707.3209999998653,
+      "frame_id": 2
+    },
+    {
+      "id": "webcam_s1_pen_01100",
+      "class_id": 1,
+      "status": 0,
+      "name": "Pen",
+      "class_score": 0.8567569168959931,
+      "presence": 0.8692713180565296,
+      "score": 0.7447542144042285,
+      "box_cxcywh_letterbox": [
+        0.50091552734375,
+        0.4144744873046875,
+        0.5679366107876933,
+        0.18359362263419612
+      ],
+      "raw": {
+        "class_logits_q8_8": [
+          -9,
+          599,
+          -446,
+          -133
+        ],
+        "presence_q8_8": 485,
+        "cx_q16": 32828,
+        "cy_q16": 27163,
+        "size_q8_8": [
+          70,
+          -382
+        ]
+      },
+      "inference_cycles": 20118456,
+      "inference_ms": 201.18456,
+      "inference_location": "Basys 3 FPGA",
+      "roundtrip_ms": 706.3898999995217,
+      "frame_id": 3
+    },
+    {
+      "id": "webcam_s1_book_01200",
+      "class_id": 2,
+      "status": 0,
+      "name": "Book",
+      "class_score": 0.9077854567775302,
+      "presence": 0.9954438862855455,
+      "score": 0.9036494830081238,
+      "box_cxcywh_letterbox": [
+        0.597198486328125,
+        0.5060882568359375,
+        0.8852352197343663,
+        0.4843800842769844
+      ],
+      "raw": {
+        "class_logits_q8_8": [
+          -985,
+          33,
+          704,
+          -216
+        ],
+        "presence_q8_8": 1379,
+        "cx_q16": 39138,
+        "cy_q16": 33167,
+        "size_q8_8": [
+          523,
+          -16
+        ]
+      },
+      "inference_cycles": 20118456,
+      "inference_ms": 201.18456,
+      "inference_location": "Basys 3 FPGA",
+      "roundtrip_ms": 704.9954000003709,
+      "frame_id": 4
+    },
+    {
+      "id": "webcam_s1_mouse_01260",
+      "class_id": 3,
+      "status": 0,
+      "name": "Computer Mouse",
+      "class_score": 0.9430131011721559,
+      "presence": 0.9969005844844906,
+      "score": 0.9400903117350542,
+      "box_cxcywh_letterbox": [
+        0.4601898193359375,
+        0.4382171630859375,
+        0.48047867804790706,
+        0.3433417294618181
+      ],
+      "raw": {
+        "class_logits_q8_8": [
+          29,
+          -358,
+          -685,
+          811
+        ],
+        "presence_q8_8": 1478,
+        "cx_q16": 30159,
+        "cy_q16": 28719,
+        "size_q8_8": [
+          -20,
+          -166
+        ]
+      },
+      "inference_cycles": 20118456,
+      "inference_ms": 201.18456,
+      "inference_location": "Basys 3 FPGA",
+      "roundtrip_ms": 707.0139999996172,
+      "frame_id": 5
+    },
+    {
+      "id": "webcam_s1_empty_00740",
+      "class_id": 1,
+      "status": 0,
+      "name": "Pen",
+      "class_score": 0.964389747624426,
+      "presence": 0.008544330693441928,
+      "score": 0.008240064921068097,
+      "box_cxcywh_letterbox": [
+        0.5010833740234375,
+        0.587066650390625,
+        0.6361270987720502,
+        0.19498021702145882
+      ],
+      "raw": {
+        "class_logits_q8_8": [
+          -304,
+          900,
+          -125,
+          -289
+        ],
+        "presence_q8_8": -1217,
+        "cx_q16": 32839,
+        "cy_q16": 38474,
+        "size_q8_8": [
+          143,
+          -363
+        ]
+      },
+      "inference_cycles": 20118456,
+      "inference_ms": 201.18456,
+      "inference_location": "Basys 3 FPGA",
+      "roundtrip_ms": 706.5301000002364,
+      "frame_id": 6
+    }
+  ],
+  "all_outputs_exact": true,
+  "bad_crc_rejected": true,
+  "partial_packet_recovery": true,
+  "neural_inference_on_fpga": true,
+  "note": "Bit-exact agreement with the integer reference on five webcam validation frames; not an accuracy benchmark."
+}

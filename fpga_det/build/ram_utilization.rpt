@@ -1,0 +1,225 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2026.1 (win64) Build 6511674 Tue Jun 16 11:02:23 MDT 2026
+| Date         : Fri Oct 30 12:40:43 2026
+| Host         : admin running 64-bit major release  (build 9200)
+| Command      : report_ram_utilization -file fpga_det/build/ram_utilization.rpt
+| Design       : basys3_detector
+| Device       : xc7a35tcpg236-1
+| Speed File   : -1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+RAM Usage Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Memory Description
+3. Memory Utilization - Inferred
+4. Memory Performance - Inferred
+5. Block Ram / URAM Memory Power - Inferred
+
+1. Summary
+----------
+
++--------------------------+------------+-----------+-------+-----------+
+| Memory Type              | Total Used | Available | Util% | Inferred% |
++--------------------------+------------+-----------+-------+-----------+
+| BlockRAM                 |       33.5 |        50 | 67.00 |    100.00 |
+|  RAMB36E1                |         33 |           |       |    100.00 |
+|  RAMB18E1                |          1 |           |       |    100.00 |
+| LUTMs as Distributed RAM |        202 |      9600 |  2.10 |    100.00 |
+|  LUTMs as RAM64X1D       |          2 |           |       |    100.00 |
+|  LUTMs as RAM64M         |         56 |           |       |    100.00 |
+|  LUTMs as RAM32M         |         12 |           |       |    100.00 |
+|  LUTMs as RAM256X1S      |        132 |           |       |    100.00 |
++--------------------------+------------+-----------+-------+-----------+
+*  Each RAMB18 is calculated as 0.5 BlockRAM
+**  Tables 2, 3, 4 and 5 cover RAMs inferred by Vivado Synthesis using XPMs or RTL inference
+***  XRAMs are not reported for detailed tables
+
+
+2. Memory Description
+---------------------
+
++------------------------------+------------+-----------+-------------+------------------------+------------------------+
+| Memory Name                  | Array Size | RAM_STYLE | Memory Type | Port 1 Dimension / Map | Port 2 Dimension / Map |
++------------------------------+------------+-----------+-------------+------------------------+------------------------+
+| u_core/activation_a          |     524288 |           | RAM_SDP     | 65536x8                | 65536x8                |
+|  u_core/activation_a_reg_0_0 |      32768 |     BLOCK |             |  A:A:32768x1           |  B:B:32768x0           |
+|  u_core/activation_a_reg_0_1 |      32768 |     BLOCK |             |  A:A:32768x1           |  B:B:32768x0           |
+|  u_core/activation_a_reg_0_2 |      32768 |     BLOCK |             |  A:A:32768x1           |  B:B:32768x0           |
+|  u_core/activation_a_reg_0_3 |      32768 |     BLOCK |             |  A:A:32768x1           |  B:B:32768x0           |
+|  u_core/activation_a_reg_0_4 |      32768 |     BLOCK |             |  A:A:32768x1           |  B:B:32768x0           |
+|  u_core/activation_a_reg_0_5 |      32768 |     BLOCK |             |  A:A:32768x1           |  B:B:32768x0           |
+|  u_core/activation_a_reg_0_6 |      32768 |     BLOCK |             |  A:A:32768x1           |  B:B:32768x0           |
+|  u_core/activation_a_reg_0_7 |      32768 |     BLOCK |             |  A:A:32768x1           |  B:B:32768x0           |
+|  u_core/activation_a_reg_1_0 |      32768 |     BLOCK |             |  A:A:32768x1           |  B:B:32768x1           |
+|  u_core/activation_a_reg_1_1 |      32768 |     BLOCK |             |  A:A:32768x1           |  B:B:32768x1           |
+|  u_core/activation_a_reg_1_2 |      32768 |     BLOCK |             |  A:A:32768x1           |  B:B:32768x1           |
+|  u_core/activation_a_reg_1_3 |      32768 |     BLOCK |             |  A:A:32768x1           |  B:B:32768x1           |
+|  u_core/activation_a_reg_1_4 |      32768 |     BLOCK |             |  A:A:32768x1           |  B:B:32768x1           |
+|  u_core/activation_a_reg_1_5 |      32768 |     BLOCK |             |  A:A:32768x1           |  B:B:32768x1           |
+|  u_core/activation_a_reg_1_6 |      32768 |     BLOCK |             |  A:A:32768x1           |  B:B:32768x1           |
+|  u_core/activation_a_reg_1_7 |      32768 |     BLOCK |             |  A:A:32768x1           |  B:B:32768x1           |
+| u_core/activation_b          |     524288 |           | RAM_SDP     | 65536x8                | 65536x8                |
+|  u_core/activation_b_reg_0_0 |      32768 |     BLOCK |             |  A:A:32768x1           |  B:B:32768x0           |
+|  u_core/activation_b_reg_0_1 |      32768 |     BLOCK |             |  A:A:32768x1           |  B:B:32768x0           |
+|  u_core/activation_b_reg_0_2 |      32768 |     BLOCK |             |  A:A:32768x1           |  B:B:32768x0           |
+|  u_core/activation_b_reg_0_3 |      32768 |     BLOCK |             |  A:A:32768x1           |  B:B:32768x0           |
+|  u_core/activation_b_reg_0_4 |      32768 |     BLOCK |             |  A:A:32768x1           |  B:B:32768x0           |
+|  u_core/activation_b_reg_0_5 |      32768 |     BLOCK |             |  A:A:32768x1           |  B:B:32768x0           |
+|  u_core/activation_b_reg_0_6 |      32768 |     BLOCK |             |  A:A:32768x1           |  B:B:32768x0           |
+|  u_core/activation_b_reg_0_7 |      32768 |     BLOCK |             |  A:A:32768x1           |  B:B:32768x0           |
+|  u_core/activation_b_reg_1_0 |      32768 |     BLOCK |             |  A:A:32768x1           |  B:B:32768x1           |
+|  u_core/activation_b_reg_1_1 |      32768 |     BLOCK |             |  A:A:32768x1           |  B:B:32768x1           |
+|  u_core/activation_b_reg_1_2 |      32768 |     BLOCK |             |  A:A:32768x1           |  B:B:32768x1           |
+|  u_core/activation_b_reg_1_3 |      32768 |     BLOCK |             |  A:A:32768x1           |  B:B:32768x1           |
+|  u_core/activation_b_reg_1_4 |      32768 |     BLOCK |             |  A:A:32768x1           |  B:B:32768x1           |
+|  u_core/activation_b_reg_1_5 |      32768 |     BLOCK |             |  A:A:32768x1           |  B:B:32768x1           |
+|  u_core/activation_b_reg_1_6 |      32768 |     BLOCK |             |  A:A:32768x1           |  B:B:32768x1           |
+|  u_core/activation_b_reg_1_7 |      32768 |     BLOCK |             |  A:A:32768x1           |  B:B:32768x1           |
+| u_core/parameter_q           |      46080 |           | RAM_SP      |                        | 1024x45                |
+|  u_core/parameter_q_reg_0    |      32768 |      NONE |             |                        |  A:A:1024x32           |
+|  u_core/parameter_q_reg_1    |      13312 |      NONE |             |                        |  A:A:1024x13           |
++------------------------------+------------+-----------+-------------+------------------------+------------------------+
+
+
+3. Memory Utilization - Inferred
+--------------------------------
+
++------------------------------+-----------+-----------+----------------+-----------+-----------+---------+---------------+---------------+---------+---------------+---------------+---------+---------------+---------------+---------+---------------+---------------+
+| Memory Name                  | Primitive | RAM STYLE | Available Bits | Used Bits | Bit Util% | A Depth | A Depth Avail | A Depth Util% | A Width | A Width Avail | A Width Util% | B Depth | B Depth Avail | B Depth Util% | B Width | B Width Avail | B Width Util% |
++------------------------------+-----------+-----------+----------------+-----------+-----------+---------+---------------+---------------+---------+---------------+---------------+---------+---------------+---------------+---------+---------------+---------------+
+| u_core/activation_a          |           |           |                |           |           |         |               |               |         |               |               |         |               |               |         |               |               |
+|  u_core/activation_a_reg_0_0 | RAMB36E1  |     BLOCK |          36864 |     32768 |     88.89 |   32768 |         32768 |        100.00 |       1 |             1 |        100.00 |   32768 |         32768 |        100.00 |       0 |             1 |          0.00 |
+|  u_core/activation_a_reg_0_1 | RAMB36E1  |     BLOCK |          36864 |     32768 |     88.89 |   32768 |         32768 |        100.00 |       1 |             1 |        100.00 |   32768 |         32768 |        100.00 |       0 |             1 |          0.00 |
+|  u_core/activation_a_reg_0_2 | RAMB36E1  |     BLOCK |          36864 |     32768 |     88.89 |   32768 |         32768 |        100.00 |       1 |             1 |        100.00 |   32768 |         32768 |        100.00 |       0 |             1 |          0.00 |
+|  u_core/activation_a_reg_0_3 | RAMB36E1  |     BLOCK |          36864 |     32768 |     88.89 |   32768 |         32768 |        100.00 |       1 |             1 |        100.00 |   32768 |         32768 |        100.00 |       0 |             1 |          0.00 |
+|  u_core/activation_a_reg_0_4 | RAMB36E1  |     BLOCK |          36864 |     32768 |     88.89 |   32768 |         32768 |        100.00 |       1 |             1 |        100.00 |   32768 |         32768 |        100.00 |       0 |             1 |          0.00 |
+|  u_core/activation_a_reg_0_5 | RAMB36E1  |     BLOCK |          36864 |     32768 |     88.89 |   32768 |         32768 |        100.00 |       1 |             1 |        100.00 |   32768 |         32768 |        100.00 |       0 |             1 |          0.00 |
+|  u_core/activation_a_reg_0_6 | RAMB36E1  |     BLOCK |          36864 |     32768 |     88.89 |   32768 |         32768 |        100.00 |       1 |             1 |        100.00 |   32768 |         32768 |        100.00 |       0 |             1 |          0.00 |
+|  u_core/activation_a_reg_0_7 | RAMB36E1  |     BLOCK |          36864 |     32768 |     88.89 |   32768 |         32768 |        100.00 |       1 |             1 |        100.00 |   32768 |         32768 |        100.00 |       0 |             1 |          0.00 |
+|  u_core/activation_a_reg_1_0 | RAMB36E1  |     BLOCK |          36864 |     32768 |     88.89 |   32768 |         32768 |        100.00 |       1 |             1 |        100.00 |   32768 |         32768 |        100.00 |       1 |             1 |        100.00 |
+|  u_core/activation_a_reg_1_1 | RAMB36E1  |     BLOCK |          36864 |     32768 |     88.89 |   32768 |         32768 |        100.00 |       1 |             1 |        100.00 |   32768 |         32768 |        100.00 |       1 |             1 |        100.00 |
+|  u_core/activation_a_reg_1_2 | RAMB36E1  |     BLOCK |          36864 |     32768 |     88.89 |   32768 |         32768 |        100.00 |       1 |             1 |        100.00 |   32768 |         32768 |        100.00 |       1 |             1 |        100.00 |
+|  u_core/activation_a_reg_1_3 | RAMB36E1  |     BLOCK |          36864 |     32768 |     88.89 |   32768 |         32768 |        100.00 |       1 |             1 |        100.00 |   32768 |         32768 |        100.00 |       1 |             1 |        100.00 |
+|  u_core/activation_a_reg_1_4 | RAMB36E1  |     BLOCK |          36864 |     32768 |     88.89 |   32768 |         32768 |        100.00 |       1 |             1 |        100.00 |   32768 |         32768 |        100.00 |       1 |             1 |        100.00 |
+|  u_core/activation_a_reg_1_5 | RAMB36E1  |     BLOCK |          36864 |     32768 |     88.89 |   32768 |         32768 |        100.00 |       1 |             1 |        100.00 |   32768 |         32768 |        100.00 |       1 |             1 |        100.00 |
+|  u_core/activation_a_reg_1_6 | RAMB36E1  |     BLOCK |          36864 |     32768 |     88.89 |   32768 |         32768 |        100.00 |       1 |             1 |        100.00 |   32768 |         32768 |        100.00 |       1 |             1 |        100.00 |
+|  u_core/activation_a_reg_1_7 | RAMB36E1  |     BLOCK |          36864 |     32768 |     88.89 |   32768 |         32768 |        100.00 |       1 |             1 |        100.00 |   32768 |         32768 |        100.00 |       1 |             1 |        100.00 |
+| u_core/activation_b          |           |           |                |           |           |         |               |               |         |               |               |         |               |               |         |               |               |
+|  u_core/activation_b_reg_0_0 | RAMB36E1  |     BLOCK |          36864 |     32768 |     88.89 |   32768 |         32768 |        100.00 |       1 |             1 |        100.00 |   32768 |         32768 |        100.00 |       0 |             1 |          0.00 |
+|  u_core/activation_b_reg_0_1 | RAMB36E1  |     BLOCK |          36864 |     32768 |     88.89 |   32768 |         32768 |        100.00 |       1 |             1 |        100.00 |   32768 |         32768 |        100.00 |       0 |             1 |          0.00 |
+|  u_core/activation_b_reg_0_2 | RAMB36E1  |     BLOCK |          36864 |     32768 |     88.89 |   32768 |         32768 |        100.00 |       1 |             1 |        100.00 |   32768 |         32768 |        100.00 |       0 |             1 |          0.00 |
+|  u_core/activation_b_reg_0_3 | RAMB36E1  |     BLOCK |          36864 |     32768 |     88.89 |   32768 |         32768 |        100.00 |       1 |             1 |        100.00 |   32768 |         32768 |        100.00 |       0 |             1 |          0.00 |
+|  u_core/activation_b_reg_0_4 | RAMB36E1  |     BLOCK |          36864 |     32768 |     88.89 |   32768 |         32768 |        100.00 |       1 |             1 |        100.00 |   32768 |         32768 |        100.00 |       0 |             1 |          0.00 |
+|  u_core/activation_b_reg_0_5 | RAMB36E1  |     BLOCK |          36864 |     32768 |     88.89 |   32768 |         32768 |        100.00 |       1 |             1 |        100.00 |   32768 |         32768 |        100.00 |       0 |             1 |          0.00 |
+|  u_core/activation_b_reg_0_6 | RAMB36E1  |     BLOCK |          36864 |     32768 |     88.89 |   32768 |         32768 |        100.00 |       1 |             1 |        100.00 |   32768 |         32768 |        100.00 |       0 |             1 |          0.00 |
+|  u_core/activation_b_reg_0_7 | RAMB36E1  |     BLOCK |          36864 |     32768 |     88.89 |   32768 |         32768 |        100.00 |       1 |             1 |        100.00 |   32768 |         32768 |        100.00 |       0 |             1 |          0.00 |
+|  u_core/activation_b_reg_1_0 | RAMB36E1  |     BLOCK |          36864 |     32768 |     88.89 |   32768 |         32768 |        100.00 |       1 |             1 |        100.00 |   32768 |         32768 |        100.00 |       1 |             1 |        100.00 |
+|  u_core/activation_b_reg_1_1 | RAMB36E1  |     BLOCK |          36864 |     32768 |     88.89 |   32768 |         32768 |        100.00 |       1 |             1 |        100.00 |   32768 |         32768 |        100.00 |       1 |             1 |        100.00 |
+|  u_core/activation_b_reg_1_2 | RAMB36E1  |     BLOCK |          36864 |     32768 |     88.89 |   32768 |         32768 |        100.00 |       1 |             1 |        100.00 |   32768 |         32768 |        100.00 |       1 |             1 |        100.00 |
+|  u_core/activation_b_reg_1_3 | RAMB36E1  |     BLOCK |          36864 |     32768 |     88.89 |   32768 |         32768 |        100.00 |       1 |             1 |        100.00 |   32768 |         32768 |        100.00 |       1 |             1 |        100.00 |
+|  u_core/activation_b_reg_1_4 | RAMB36E1  |     BLOCK |          36864 |     32768 |     88.89 |   32768 |         32768 |        100.00 |       1 |             1 |        100.00 |   32768 |         32768 |        100.00 |       1 |             1 |        100.00 |
+|  u_core/activation_b_reg_1_5 | RAMB36E1  |     BLOCK |          36864 |     32768 |     88.89 |   32768 |         32768 |        100.00 |       1 |             1 |        100.00 |   32768 |         32768 |        100.00 |       1 |             1 |        100.00 |
+|  u_core/activation_b_reg_1_6 | RAMB36E1  |     BLOCK |          36864 |     32768 |     88.89 |   32768 |         32768 |        100.00 |       1 |             1 |        100.00 |   32768 |         32768 |        100.00 |       1 |             1 |        100.00 |
+|  u_core/activation_b_reg_1_7 | RAMB36E1  |     BLOCK |          36864 |     32768 |     88.89 |   32768 |         32768 |        100.00 |       1 |             1 |        100.00 |   32768 |         32768 |        100.00 |       1 |             1 |        100.00 |
+| u_core/parameter_q           |           |           |                |           |           |         |               |               |         |               |               |         |               |               |         |               |               |
+|  u_core/parameter_q_reg_0    | RAMB36E1  |      NONE |          36864 |     32768 |     88.89 |    1024 |          1024 |        100.00 |      32 |            36 |         88.89 |         |               |               |         |               |               |
+|  u_core/parameter_q_reg_1    | RAMB18E1  |      NONE |          18432 |     13312 |     72.22 |    1024 |          1024 |        100.00 |      13 |            18 |         72.22 |         |               |               |         |               |               |
++------------------------------+-----------+-----------+----------------+-----------+-----------+---------+---------------+---------------+---------+---------------+---------------+---------+---------------+---------------+---------+---------------+---------------+
+
+
+4. Memory Performance - Inferred
+--------------------------------
+
++------------------------------+-----------+------------------------+------------------------+-------------+-------------------------+-------------+-------------------------+-----------+--------+--------+---------+-----------+--------+--------+---------+
+| Memory Name                  | Primitive | Port 1 Dimension / Map | Port 2 Dimension / Map | Port A Type | Port A Requirement (ns) | Port B Type | Port B Requirement (ns) | A Cascade | IREG_A | OREG_A | DOA_REG | B Cascade | IREG_B | OREG_B | DOB_REG |
++------------------------------+-----------+------------------------+------------------------+-------------+-------------------------+-------------+-------------------------+-----------+--------+--------+---------+-----------+--------+--------+---------+
+| u_core/activation_a          |           | 65536x8                | 65536x8                |             |                         |             |                         |           |        |        |         |           |        |        |         |
+|  u_core/activation_a_reg_0_0 | RAMB36E1  |  A:A:32768x1           |  B:B:32768x0           |       Write |                    10.0 |        Read |                    10.0 |           |        |        |       0 |           |        |        |       0 |
+|  u_core/activation_a_reg_0_1 | RAMB36E1  |  A:A:32768x1           |  B:B:32768x0           |       Write |                    10.0 |        Read |                    10.0 |           |        |        |       0 |           |        |        |       0 |
+|  u_core/activation_a_reg_0_2 | RAMB36E1  |  A:A:32768x1           |  B:B:32768x0           |       Write |                    10.0 |        Read |                    10.0 |           |        |        |       0 |           |        |        |       0 |
+|  u_core/activation_a_reg_0_3 | RAMB36E1  |  A:A:32768x1           |  B:B:32768x0           |       Write |                    10.0 |        Read |                    10.0 |           |        |        |       0 |           |        |        |       0 |
+|  u_core/activation_a_reg_0_4 | RAMB36E1  |  A:A:32768x1           |  B:B:32768x0           |       Write |                    10.0 |        Read |                    10.0 |           |        |        |       0 |           |        |        |       0 |
+|  u_core/activation_a_reg_0_5 | RAMB36E1  |  A:A:32768x1           |  B:B:32768x0           |       Write |                    10.0 |        Read |                    10.0 |           |        |        |       0 |           |        |        |       0 |
+|  u_core/activation_a_reg_0_6 | RAMB36E1  |  A:A:32768x1           |  B:B:32768x0           |       Write |                    10.0 |        Read |                    10.0 |           |        |        |       0 |           |        |        |       0 |
+|  u_core/activation_a_reg_0_7 | RAMB36E1  |  A:A:32768x1           |  B:B:32768x0           |       Write |                    10.0 |        Read |                    10.0 |           |        |        |       0 |           |        |        |       0 |
+|  u_core/activation_a_reg_1_0 | RAMB36E1  |  A:A:32768x1           |  B:B:32768x1           |       Write |                    10.0 |        Read |                    10.0 |           |        |        |       0 |           |        |        |       0 |
+|  u_core/activation_a_reg_1_1 | RAMB36E1  |  A:A:32768x1           |  B:B:32768x1           |       Write |                    10.0 |        Read |                    10.0 |           |        |        |       0 |           |        |        |       0 |
+|  u_core/activation_a_reg_1_2 | RAMB36E1  |  A:A:32768x1           |  B:B:32768x1           |       Write |                    10.0 |        Read |                    10.0 |           |        |        |       0 |           |        |        |       0 |
+|  u_core/activation_a_reg_1_3 | RAMB36E1  |  A:A:32768x1           |  B:B:32768x1           |       Write |                    10.0 |        Read |                    10.0 |           |        |        |       0 |           |        |        |       0 |
+|  u_core/activation_a_reg_1_4 | RAMB36E1  |  A:A:32768x1           |  B:B:32768x1           |       Write |                    10.0 |        Read |                    10.0 |           |        |        |       0 |           |        |        |       0 |
+|  u_core/activation_a_reg_1_5 | RAMB36E1  |  A:A:32768x1           |  B:B:32768x1           |       Write |                    10.0 |        Read |                    10.0 |           |        |        |       0 |           |        |        |       0 |
+|  u_core/activation_a_reg_1_6 | RAMB36E1  |  A:A:32768x1           |  B:B:32768x1           |       Write |                    10.0 |        Read |                    10.0 |           |        |        |       0 |           |        |        |       0 |
+|  u_core/activation_a_reg_1_7 | RAMB36E1  |  A:A:32768x1           |  B:B:32768x1           |       Write |                    10.0 |        Read |                    10.0 |           |        |        |       0 |           |        |        |       0 |
+| u_core/activation_b          |           | 65536x8                | 65536x8                |             |                         |             |                         |           |        |        |         |           |        |        |         |
+|  u_core/activation_b_reg_0_0 | RAMB36E1  |  A:A:32768x1           |  B:B:32768x0           |       Write |                    10.0 |        Read |                    10.0 |           |        |        |       0 |           |        |        |       0 |
+|  u_core/activation_b_reg_0_1 | RAMB36E1  |  A:A:32768x1           |  B:B:32768x0           |       Write |                    10.0 |        Read |                    10.0 |           |        |        |       0 |           |        |        |       0 |
+|  u_core/activation_b_reg_0_2 | RAMB36E1  |  A:A:32768x1           |  B:B:32768x0           |       Write |                    10.0 |        Read |                    10.0 |           |        |        |       0 |           |        |        |       0 |
+|  u_core/activation_b_reg_0_3 | RAMB36E1  |  A:A:32768x1           |  B:B:32768x0           |       Write |                    10.0 |        Read |                    10.0 |           |        |        |       0 |           |        |        |       0 |
+|  u_core/activation_b_reg_0_4 | RAMB36E1  |  A:A:32768x1           |  B:B:32768x0           |       Write |                    10.0 |        Read |                    10.0 |           |        |        |       0 |           |        |        |       0 |
+|  u_core/activation_b_reg_0_5 | RAMB36E1  |  A:A:32768x1           |  B:B:32768x0           |       Write |                    10.0 |        Read |                    10.0 |           |        |        |       0 |           |        |        |       0 |
+|  u_core/activation_b_reg_0_6 | RAMB36E1  |  A:A:32768x1           |  B:B:32768x0           |       Write |                    10.0 |        Read |                    10.0 |           |        |        |       0 |           |        |        |       0 |
+|  u_core/activation_b_reg_0_7 | RAMB36E1  |  A:A:32768x1           |  B:B:32768x0           |       Write |                    10.0 |        Read |                    10.0 |           |        |        |       0 |           |        |        |       0 |
+|  u_core/activation_b_reg_1_0 | RAMB36E1  |  A:A:32768x1           |  B:B:32768x1           |       Write |                    10.0 |        Read |                    10.0 |           |        |        |       0 |           |        |        |       0 |
+|  u_core/activation_b_reg_1_1 | RAMB36E1  |  A:A:32768x1           |  B:B:32768x1           |       Write |                    10.0 |        Read |                    10.0 |           |        |        |       0 |           |        |        |       0 |
+|  u_core/activation_b_reg_1_2 | RAMB36E1  |  A:A:32768x1           |  B:B:32768x1           |       Write |                    10.0 |        Read |                    10.0 |           |        |        |       0 |           |        |        |       0 |
+|  u_core/activation_b_reg_1_3 | RAMB36E1  |  A:A:32768x1           |  B:B:32768x1           |       Write |                    10.0 |        Read |                    10.0 |           |        |        |       0 |           |        |        |       0 |
+|  u_core/activation_b_reg_1_4 | RAMB36E1  |  A:A:32768x1           |  B:B:32768x1           |       Write |                    10.0 |        Read |                    10.0 |           |        |        |       0 |           |        |        |       0 |
+|  u_core/activation_b_reg_1_5 | RAMB36E1  |  A:A:32768x1           |  B:B:32768x1           |       Write |                    10.0 |        Read |                    10.0 |           |        |        |       0 |           |        |        |       0 |
+|  u_core/activation_b_reg_1_6 | RAMB36E1  |  A:A:32768x1           |  B:B:32768x1           |       Write |                    10.0 |        Read |                    10.0 |           |        |        |       0 |           |        |        |       0 |
+|  u_core/activation_b_reg_1_7 | RAMB36E1  |  A:A:32768x1           |  B:B:32768x1           |       Write |                    10.0 |        Read |                    10.0 |           |        |        |       0 |           |        |        |       0 |
+| u_core/parameter_q           |           |                        | 1024x45                |             |                         |             |                         |           |        |        |         |           |        |        |         |
+|  u_core/parameter_q_reg_0    | RAMB36E1  |                        |  A:A:1024x32           |        Read |                    10.0 |             |                         |           |        |        |       0 |           |        |        |         |
+|  u_core/parameter_q_reg_1    | RAMB18E1  |                        |  A:A:1024x13           |        Read |                    10.0 |             |                         |           |        |        |       0 |           |        |        |         |
++------------------------------+-----------+------------------------+------------------------+-------------+-------------------------+-------------+-------------------------+-----------+--------+--------+---------+-----------+--------+--------+---------+
+
+
+5. Block Ram / URAM Memory Power - Inferred
+-------------------------------------------
+
++------------------------------+-----------+------------------------+------------------------+-------------------------+---------------+-------------------+-----------+-------------------------+---------------+-------------------+-----------+
+| Memory Name                  | Primitive | Port 1 Dimension / Map | Port 2 Dimension / Map | Port A Power Gated      | Port A Enable | Port A WRITE_MODE | A Cascade | Port B Power Gated      | Port B Enable | Port B WRITE_MODE | B Cascade |
++------------------------------+-----------+------------------------+------------------------+-------------------------+---------------+-------------------+-----------+-------------------------+---------------+-------------------+-----------+
+| u_core/activation_a          |           | 65536x8                | 65536x8                |                         |               |                   |           |                         |               |                   |           |
+|  u_core/activation_a_reg_0_0 | RAMB36E1  |  A:A:32768x1           |  B:B:32768x0           | ENBWREN=NEW:ENARDEN=NEW |        SIGNAL |        READ_FIRST |           | ENBWREN=NEW:ENARDEN=NEW |        SIGNAL |       WRITE_FIRST |           |
+|  u_core/activation_a_reg_0_1 | RAMB36E1  |  A:A:32768x1           |  B:B:32768x0           | ENBWREN=NEW:ENARDEN=NEW |        SIGNAL |        READ_FIRST |           | ENBWREN=NEW:ENARDEN=NEW |        SIGNAL |       WRITE_FIRST |           |
+|  u_core/activation_a_reg_0_2 | RAMB36E1  |  A:A:32768x1           |  B:B:32768x0           | ENBWREN=NEW:ENARDEN=NEW |        SIGNAL |        READ_FIRST |           | ENBWREN=NEW:ENARDEN=NEW |        SIGNAL |       WRITE_FIRST |           |
+|  u_core/activation_a_reg_0_3 | RAMB36E1  |  A:A:32768x1           |  B:B:32768x0           | ENBWREN=NEW:ENARDEN=NEW |        SIGNAL |        READ_FIRST |           | ENBWREN=NEW:ENARDEN=NEW |        SIGNAL |       WRITE_FIRST |           |
+|  u_core/activation_a_reg_0_4 | RAMB36E1  |  A:A:32768x1           |  B:B:32768x0           | ENBWREN=NEW:ENARDEN=NEW |        SIGNAL |        READ_FIRST |           | ENBWREN=NEW:ENARDEN=NEW |        SIGNAL |       WRITE_FIRST |           |
+|  u_core/activation_a_reg_0_5 | RAMB36E1  |  A:A:32768x1           |  B:B:32768x0           | ENBWREN=NEW:ENARDEN=NEW |        SIGNAL |        READ_FIRST |           | ENBWREN=NEW:ENARDEN=NEW |        SIGNAL |       WRITE_FIRST |           |
+|  u_core/activation_a_reg_0_6 | RAMB36E1  |  A:A:32768x1           |  B:B:32768x0           | ENBWREN=NEW:ENARDEN=NEW |        SIGNAL |        READ_FIRST |           | ENBWREN=NEW:ENARDEN=NEW |        SIGNAL |       WRITE_FIRST |           |
+|  u_core/activation_a_reg_0_7 | RAMB36E1  |  A:A:32768x1           |  B:B:32768x0           | ENBWREN=NEW:ENARDEN=NEW |        SIGNAL |        READ_FIRST |           | ENBWREN=NEW:ENARDEN=NEW |        SIGNAL |       WRITE_FIRST |           |
+|  u_core/activation_a_reg_1_0 | RAMB36E1  |  A:A:32768x1           |  B:B:32768x1           | ENBWREN=NEW:ENARDEN=AUG |        SIGNAL |        READ_FIRST |           | ENBWREN=NEW:ENARDEN=AUG |        SIGNAL |       WRITE_FIRST |           |
+|  u_core/activation_a_reg_1_1 | RAMB36E1  |  A:A:32768x1           |  B:B:32768x1           | ENBWREN=NEW:ENARDEN=AUG |        SIGNAL |        READ_FIRST |           | ENBWREN=NEW:ENARDEN=AUG |        SIGNAL |       WRITE_FIRST |           |
+|  u_core/activation_a_reg_1_2 | RAMB36E1  |  A:A:32768x1           |  B:B:32768x1           | ENBWREN=NEW:ENARDEN=AUG |        SIGNAL |        READ_FIRST |           | ENBWREN=NEW:ENARDEN=AUG |        SIGNAL |       WRITE_FIRST |           |
+|  u_core/activation_a_reg_1_3 | RAMB36E1  |  A:A:32768x1           |  B:B:32768x1           | ENBWREN=NEW:ENARDEN=AUG |        SIGNAL |        READ_FIRST |           | ENBWREN=NEW:ENARDEN=AUG |        SIGNAL |       WRITE_FIRST |           |
+|  u_core/activation_a_reg_1_4 | RAMB36E1  |  A:A:32768x1           |  B:B:32768x1           | ENBWREN=NEW:ENARDEN=AUG |        SIGNAL |        READ_FIRST |           | ENBWREN=NEW:ENARDEN=AUG |        SIGNAL |       WRITE_FIRST |           |
+|  u_core/activation_a_reg_1_5 | RAMB36E1  |  A:A:32768x1           |  B:B:32768x1           | ENBWREN=NEW:ENARDEN=AUG |        SIGNAL |        READ_FIRST |           | ENBWREN=NEW:ENARDEN=AUG |        SIGNAL |       WRITE_FIRST |           |
+|  u_core/activation_a_reg_1_6 | RAMB36E1  |  A:A:32768x1           |  B:B:32768x1           | ENBWREN=NEW:ENARDEN=AUG |        SIGNAL |        READ_FIRST |           | ENBWREN=NEW:ENARDEN=AUG |        SIGNAL |       WRITE_FIRST |           |
+|  u_core/activation_a_reg_1_7 | RAMB36E1  |  A:A:32768x1           |  B:B:32768x1           | ENBWREN=NEW:ENARDEN=AUG |        SIGNAL |        READ_FIRST |           | ENBWREN=NEW:ENARDEN=AUG |        SIGNAL |       WRITE_FIRST |           |
+| u_core/activation_b          |           | 65536x8                | 65536x8                |                         |               |                   |           |                         |               |                   |           |
+|  u_core/activation_b_reg_0_0 | RAMB36E1  |  A:A:32768x1           |  B:B:32768x0           | ENARDEN=AUG:ENBWREN=NEW |        SIGNAL |        READ_FIRST |           | ENARDEN=AUG:ENBWREN=NEW |        SIGNAL |       WRITE_FIRST |           |
+|  u_core/activation_b_reg_0_1 | RAMB36E1  |  A:A:32768x1           |  B:B:32768x0           | ENARDEN=AUG:ENBWREN=NEW |        SIGNAL |        READ_FIRST |           | ENARDEN=AUG:ENBWREN=NEW |        SIGNAL |       WRITE_FIRST |           |
+|  u_core/activation_b_reg_0_2 | RAMB36E1  |  A:A:32768x1           |  B:B:32768x0           | ENARDEN=AUG:ENBWREN=NEW |        SIGNAL |        READ_FIRST |           | ENARDEN=AUG:ENBWREN=NEW |        SIGNAL |       WRITE_FIRST |           |
+|  u_core/activation_b_reg_0_3 | RAMB36E1  |  A:A:32768x1           |  B:B:32768x0           | ENARDEN=AUG:ENBWREN=NEW |        SIGNAL |        READ_FIRST |           | ENARDEN=AUG:ENBWREN=NEW |        SIGNAL |       WRITE_FIRST |           |
+|  u_core/activation_b_reg_0_4 | RAMB36E1  |  A:A:32768x1           |  B:B:32768x0           | ENARDEN=AUG:ENBWREN=NEW |        SIGNAL |        READ_FIRST |           | ENARDEN=AUG:ENBWREN=NEW |        SIGNAL |       WRITE_FIRST |           |
+|  u_core/activation_b_reg_0_5 | RAMB36E1  |  A:A:32768x1           |  B:B:32768x0           | ENARDEN=AUG:ENBWREN=NEW |        SIGNAL |        READ_FIRST |           | ENARDEN=AUG:ENBWREN=NEW |        SIGNAL |       WRITE_FIRST |           |
+|  u_core/activation_b_reg_0_6 | RAMB36E1  |  A:A:32768x1           |  B:B:32768x0           | ENARDEN=AUG:ENBWREN=NEW |        SIGNAL |        READ_FIRST |           | ENARDEN=AUG:ENBWREN=NEW |        SIGNAL |       WRITE_FIRST |           |
+|  u_core/activation_b_reg_0_7 | RAMB36E1  |  A:A:32768x1           |  B:B:32768x0           | ENARDEN=AUG:ENBWREN=NEW |        SIGNAL |        READ_FIRST |           | ENARDEN=AUG:ENBWREN=NEW |        SIGNAL |       WRITE_FIRST |           |
+|  u_core/activation_b_reg_1_0 | RAMB36E1  |  A:A:32768x1           |  B:B:32768x1           | ENARDEN=AUG:ENBWREN=NEW |        SIGNAL |        READ_FIRST |           | ENARDEN=AUG:ENBWREN=NEW |        SIGNAL |       WRITE_FIRST |           |
+|  u_core/activation_b_reg_1_1 | RAMB36E1  |  A:A:32768x1           |  B:B:32768x1           | ENARDEN=AUG:ENBWREN=NEW |        SIGNAL |        READ_FIRST |           | ENARDEN=AUG:ENBWREN=NEW |        SIGNAL |       WRITE_FIRST |           |
+|  u_core/activation_b_reg_1_2 | RAMB36E1  |  A:A:32768x1           |  B:B:32768x1           | ENARDEN=AUG:ENBWREN=NEW |        SIGNAL |        READ_FIRST |           | ENARDEN=AUG:ENBWREN=NEW |        SIGNAL |       WRITE_FIRST |           |
+|  u_core/activation_b_reg_1_3 | RAMB36E1  |  A:A:32768x1           |  B:B:32768x1           | ENARDEN=AUG:ENBWREN=NEW |        SIGNAL |        READ_FIRST |           | ENARDEN=AUG:ENBWREN=NEW |        SIGNAL |       WRITE_FIRST |           |
+|  u_core/activation_b_reg_1_4 | RAMB36E1  |  A:A:32768x1           |  B:B:32768x1           | ENARDEN=AUG:ENBWREN=NEW |        SIGNAL |        READ_FIRST |           | ENARDEN=AUG:ENBWREN=NEW |        SIGNAL |       WRITE_FIRST |           |
+|  u_core/activation_b_reg_1_5 | RAMB36E1  |  A:A:32768x1           |  B:B:32768x1           | ENARDEN=AUG:ENBWREN=NEW |        SIGNAL |        READ_FIRST |           | ENARDEN=AUG:ENBWREN=NEW |        SIGNAL |       WRITE_FIRST |           |
+|  u_core/activation_b_reg_1_6 | RAMB36E1  |  A:A:32768x1           |  B:B:32768x1           | ENARDEN=AUG:ENBWREN=NEW |        SIGNAL |        READ_FIRST |           | ENARDEN=AUG:ENBWREN=NEW |        SIGNAL |       WRITE_FIRST |           |
+|  u_core/activation_b_reg_1_7 | RAMB36E1  |  A:A:32768x1           |  B:B:32768x1           | ENBWREN=NEW:ENARDEN=AUG |        SIGNAL |        READ_FIRST |           | ENBWREN=NEW:ENARDEN=AUG |        SIGNAL |       WRITE_FIRST |           |
+| u_core/parameter_q           |           |                        | 1024x45                |                         |               |                   |           |                         |               |                   |           |
+|  u_core/parameter_q_reg_0    | RAMB36E1  |                        |  A:A:1024x32           |             ENARDEN=NEW |        SIGNAL |       WRITE_FIRST |           |                         |               |                   |           |
+|  u_core/parameter_q_reg_1    | RAMB18E1  |                        |  A:A:1024x13           |                         |         POWER |       WRITE_FIRST |           |                         |               |                   |           |
++------------------------------+-----------+------------------------+------------------------+-------------------------+---------------+-------------------+-----------+-------------------------+---------------+-------------------+-----------+
+
+
