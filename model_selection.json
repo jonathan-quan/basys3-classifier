@@ -1,0 +1,38 @@
+{
+  "date": "2026-10-28",
+  "criterion": "highest validation accuracy; fewer inference parameters as tie-breaker",
+  "selected_run": "context_balanced",
+  "baseline_reference_run": "baseline_balanced",
+  "selection_frozen_before_test": true,
+  "selected_architecture": "context",
+  "selected_parameters": 6084,
+  "validation_accuracy": 0.7347826086956522,
+  "manifest_sha256": "571c2377de21eace6d06aec7ee99fecf023587e3cf0b30a5020c795d48042cce",
+  "candidates": {
+    "baseline": {
+      "validation_accuracy": 0.6217391304347826,
+      "parameters": 3252,
+      "training_seconds": 425.4846498
+    },
+    "baseline_balanced": {
+      "validation_accuracy": 0.6282608695652174,
+      "parameters": 3252,
+      "training_seconds": 203.4563303
+    },
+    "context_balanced": {
+      "validation_accuracy": 0.7347826086956522,
+      "parameters": 6084,
+      "training_seconds": 248.7223906999999
+    },
+    "context2_balanced": {
+      "validation_accuracy": 0.7282608695652174,
+      "parameters": 8916,
+      "training_seconds": 201.1826208
+    },
+    "standard_balanced": {
+      "validation_accuracy": 0.7086956521739131,
+      "parameters": 20100,
+      "training_seconds": 343.6397026999998
+    }
+  }
+}

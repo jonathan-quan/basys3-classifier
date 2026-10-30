@@ -1,0 +1,10 @@
+test_detector_uses_exact_preprocessing_and_skips_other_heads (test_compare.RecognitionTests.test_detector_uses_exact_preprocessing_and_skips_other_heads) ... ok
+test_display_does_not_draw_rectangles (test_compare.RecognitionTests.test_display_does_not_draw_rectangles) ... ok
+test_missing_detector_does_not_disable_original (test_compare.RecognitionTests.test_missing_detector_does_not_disable_original) ... ok
+test_original_matches_existing_webcam_preprocessing (test_compare.RecognitionTests.test_original_matches_existing_webcam_preprocessing) ... ok
+test_switch_discards_old_inflight_prediction (test_compare.RecognitionTests.test_switch_discards_old_inflight_prediction) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.180s
+
+OK

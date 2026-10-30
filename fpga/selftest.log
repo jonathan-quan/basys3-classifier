@@ -1,0 +1,5 @@
+{"port": "COM6", "baud": 1000000, "model_id_hex": "d70fd5dfdfad0b31", "input": [96, 96, 3]}
+PASS hardware integer match 0 {'class_id': 2, 'name': 'Book', 'class_score': 0.35382619974059665, 'confidence_u16': 23188, 'logits_q8_8': [-98, -148, -45, -308], 'inference_cycles': 3674813, 'inference_ms': 36.74813, 'roundtrip_ms': 315.0531999999657, 'frame_id': 2, 'inference_location': 'Basys 3 FPGA'}
+PASS hardware integer match 1 {'class_id': 3, 'name': 'Computer Mouse', 'class_score': 0.8327611200122073, 'confidence_u16': 54575, 'logits_q8_8': [-144, -400, -611, 376], 'inference_cycles': 3674813, 'inference_ms': 36.74813, 'roundtrip_ms': 317.1111000010569, 'frame_id': 3, 'inference_location': 'Basys 3 FPGA'}
+PASS hardware integer match 2 {'class_id': 0, 'name': "Rubik's Cube", 'class_score': 0.8937361715114062, 'confidence_u16': 58571, 'logits_q8_8': [445, -393, -480, -300], 'inference_cycles': 3674813, 'inference_ms': 36.74813, 'roundtrip_ms': 315.93570000040927, 'frame_id': 4, 'inference_location': 'Basys 3 FPGA'}
+HARDWARE SELF TEST PASSED

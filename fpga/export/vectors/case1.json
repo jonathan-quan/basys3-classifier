@@ -1,0 +1,11 @@
+{
+  "image": "C:\\Users\\ndaqu\\Documents\\Basys3Classifier\\data\\raw\\rubiks_cube\\oi-author-223ca814743a7a90\\oi-author-223ca814743a7a90\\4fc074633e2e8494.jpg",
+  "label": "rubiks_cube",
+  "logits": [
+    -144,
+    -400,
+    -611,
+    376
+  ],
+  "predicted": 3
+}

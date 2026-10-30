@@ -1,0 +1,133 @@
+{
+  "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+  "executable": "C:\\Users\\ndaqu\\Documents\\Basys3Classifier\\.venv\\Scripts\\python.exe",
+  "platform": "Windows-10-10.0.26300-SP0",
+  "torch": "2.14.1+cu130",
+  "cuda_build": "13.0",
+  "cuda_available": true,
+  "gpu": "NVIDIA GeForce RTX 5060 Laptop GPU",
+  "gpu_vram_bytes": 8546484224,
+  "selected_device": "cuda",
+  "forward_backward_check": "passed",
+  "model": {
+    "architecture": "baseline",
+    "input": [
+      3,
+      96,
+      96
+    ],
+    "parameters": 3252,
+    "weights": 3088,
+    "biases": 164,
+    "fp32_parameter_bytes": 13008,
+    "future_int8_weight_bytes": 3088,
+    "future_int32_bias_bytes": 656,
+    "macs": 773184,
+    "future_peak_live_activation_bytes": 46080,
+    "note": "INT8 figures are analytical payload estimates, not a quantized checkpoint or synthesis result.",
+    "layers": [
+      {
+        "layer": "features.0",
+        "shape": [
+          8,
+          48,
+          48
+        ],
+        "weights": 216,
+        "biases": 8,
+        "macs": 497664,
+        "activation_int8_bytes": 18432
+      },
+      {
+        "layer": "features.2",
+        "shape": [
+          8,
+          24,
+          24
+        ],
+        "weights": 72,
+        "biases": 8,
+        "macs": 41472,
+        "activation_int8_bytes": 4608
+      },
+      {
+        "layer": "features.4",
+        "shape": [
+          16,
+          24,
+          24
+        ],
+        "weights": 128,
+        "biases": 16,
+        "macs": 73728,
+        "activation_int8_bytes": 9216
+      },
+      {
+        "layer": "features.6",
+        "shape": [
+          16,
+          12,
+          12
+        ],
+        "weights": 144,
+        "biases": 16,
+        "macs": 20736,
+        "activation_int8_bytes": 2304
+      },
+      {
+        "layer": "features.8",
+        "shape": [
+          32,
+          12,
+          12
+        ],
+        "weights": 512,
+        "biases": 32,
+        "macs": 73728,
+        "activation_int8_bytes": 4608
+      },
+      {
+        "layer": "features.10",
+        "shape": [
+          32,
+          6,
+          6
+        ],
+        "weights": 288,
+        "biases": 32,
+        "macs": 10368,
+        "activation_int8_bytes": 1152
+      },
+      {
+        "layer": "features.12",
+        "shape": [
+          48,
+          6,
+          6
+        ],
+        "weights": 1536,
+        "biases": 48,
+        "macs": 55296,
+        "activation_int8_bytes": 1728
+      },
+      {
+        "layer": "fc",
+        "shape": [
+          4
+        ],
+        "weights": 192,
+        "biases": 4,
+        "macs": 192,
+        "activation_int8_bytes": 4
+      }
+    ]
+  },
+  "cuda_architectures": [
+    "sm_75",
+    "sm_80",
+    "sm_86",
+    "sm_90",
+    "sm_100",
+    "sm_120"
+  ]
+}

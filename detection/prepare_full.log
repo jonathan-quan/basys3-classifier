@@ -1,0 +1,53 @@
+{
+  "counts": {
+    "train": {
+      "positive": [
+        407,
+        467,
+        701,
+        306
+      ],
+      "negative": 64
+    },
+    "val": {
+      "positive": [
+        19,
+        100,
+        151,
+        66
+      ],
+      "negative": 14
+    },
+    "test": {
+      "positive": [
+        20,
+        97,
+        148,
+        57
+      ],
+      "negative": 13
+    }
+  },
+  "total": 2630,
+  "groups": 1524,
+  "annotation_status": {
+    "human_verified": 130,
+    "source_ground_truth": 2500
+  },
+  "sources": {
+    "https://storage.googleapis.com/openimages/web/download_v7.html": 2183,
+    "https://github.com/phonght32/yoloV2-detectRubik": 407,
+    "https://storage.googleapis.com/openimages/web/extended.html": 40
+  },
+  "quarantined": [],
+  "exact_duplicates_removed": [],
+  "incomplete_pilot": false,
+  "instance_disjoint": false,
+  "manifest_sha256": "b496d0760f8e17d1414949eb51e2319ff63914852b84db83dec395dd5849e97f",
+  "limitations": [
+    "Cube webcam source kept entirely train-only.",
+    "No personal webcam benchmark exists.",
+    "Public source metadata cannot prove all unknown capture/physical instance independence.",
+    "Reviewed original classifier val/test images are legacy benchmarks, not fresh detector holdouts."
+  ]
+}

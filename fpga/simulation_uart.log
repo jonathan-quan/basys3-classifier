@@ -1,0 +1,48 @@
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/ndaqu/Documents/Basys3Classifier/fpga/rtl/classifier_core.sv" into library work
+INFO: [VRFC 10-311] analyzing module classifier_core
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/ndaqu/Documents/Basys3Classifier/fpga/rtl/uart.sv" into library work
+INFO: [VRFC 10-311] analyzing module uart_rx
+INFO: [VRFC 10-311] analyzing module uart_tx
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/ndaqu/Documents/Basys3Classifier/fpga/rtl/basys3_classifier.sv" into library work
+INFO: [VRFC 10-311] analyzing module basys3_classifier
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/ndaqu/Documents/Basys3Classifier/fpga/sim/tb_uart.sv" into library work
+INFO: [VRFC 10-311] analyzing module tb_uart
+Vivado Simulator v2026.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/AMDDesignTools/2026.1/Vivado/bin/unwrapped/win64.o/xelab.exe tb_uart -s classifier_uart_sim -debug typical 
+Multi-threading is on. Using 14 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module work.uart_rx_default
+Compiling module work.uart_tx_default
+Compiling module work.classifier_core
+Compiling module work.basys3_classifier
+Compiling module work.tb_uart
+Built simulation snapshot classifier_uart_sim
+
+****** xsim v2026.1 (64-bit)
+  **** SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+  **** IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+  **** SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+  **** Start of session at: Thu Oct 29 13:03:35 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source xsim.dir/classifier_uart_sim/xsim_script.tcl
+# xsim {classifier_uart_sim} -autoloadwcfg -runall
+Time resolution is 1 ps
+run -all
+PASS UART HELLO identity and CRC
+PASS UART corrupted CRC rejected
+PASS UART invalid image configuration rejected
+ALL UART FRAMING, CRC, RGB TO CHW, INFERENCE AND OUTPUT BYTES MATCH
+$finish called at time : 315674030 ns : File "C:/Users/ndaqu/Documents/Basys3Classifier/fpga/sim/tb_uart.sv" Line 49
+run: Time (s): cpu = 00:00:00 ; elapsed = 00:00:18 . Memory (MB): peak = 236.945 ; gain = 0.000
+exit
+INFO: xsimkernel Simulation Memory Usage: 20268 KB (Peak: 20268 KB), Simulation CPU Usage: 18093 ms
+INFO: [Common 17-206] Exiting xsim at Thu Oct 29 13:03:55 2026...

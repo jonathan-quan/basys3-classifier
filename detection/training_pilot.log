@@ -1,0 +1,58 @@
+{
+  "device": "cuda",
+  "transfer": {
+    "checkpoint_sha256": "98c66c324f34d66a1c4d876ec3fcf05f6ed1f57f0df1a7c6733870fbb3e4cf61",
+    "parameters_transferred": 6084,
+    "tensors_transferred": 20,
+    "new_parameters": 1597
+  },
+  "counts": {
+    "train": {
+      "positive": [
+        407,
+        465,
+        700,
+        298
+      ],
+      "negative": 0
+    },
+    "val": {
+      "positive": [
+        0,
+        93,
+        152,
+        64
+      ],
+      "negative": 0
+    },
+    "test": {
+      "positive": [
+        0,
+        106,
+        148,
+        67
+      ],
+      "negative": 0
+    }
+  },
+  "objectness_trained": false,
+  "pilot": true
+}
+{"epoch": 1, "warmup": true, "loss": 3.905045994122823, "val_map50": 0.08835823967929489, "val_mean_iou": 0.3697210505486445, "val_class_accuracy": 0.44336569579288027, "backbone_lr": 5e-05, "head_lr": 0.001}
+{"epoch": 2, "warmup": true, "loss": 3.7902137200037638, "val_map50": 0.10277093770151084, "val_mean_iou": 0.37561628233956346, "val_class_accuracy": 0.44336569579288027, "backbone_lr": 5e-05, "head_lr": 0.001}
+{"epoch": 3, "warmup": true, "loss": 3.670246116320292, "val_map50": 0.08332111080158598, "val_mean_iou": 0.36957352861353654, "val_class_accuracy": 0.44336569579288027, "backbone_lr": 5e-05, "head_lr": 0.001}
+{"epoch": 4, "warmup": true, "loss": 3.7420051097869873, "val_map50": 0.08824310643490886, "val_mean_iou": 0.3765292836322666, "val_class_accuracy": 0.44336569579288027, "backbone_lr": 5e-05, "head_lr": 0.001}
+{"epoch": 5, "warmup": true, "loss": 3.707129430770874, "val_map50": 0.0721246900134554, "val_mean_iou": 0.3566134910191135, "val_class_accuracy": 0.44336569579288027, "backbone_lr": 5e-05, "head_lr": 0.001}
+{"epoch": 6, "warmup": true, "loss": 3.656588077545166, "val_map50": 0.07387462199101569, "val_mean_iou": 0.3649075754368482, "val_class_accuracy": 0.44336569579288027, "backbone_lr": 5e-05, "head_lr": 0.001}
+{"epoch": 7, "warmup": true, "loss": 3.6888146082560223, "val_map50": 0.054338144455469355, "val_mean_iou": 0.3389692071580003, "val_class_accuracy": 0.44336569579288027, "backbone_lr": 5e-05, "head_lr": 0.001}
+{"epoch": 8, "warmup": true, "loss": 3.666383639971415, "val_map50": 0.06312242399291536, "val_mean_iou": 0.3550019395887297, "val_class_accuracy": 0.44336569579288027, "backbone_lr": 2.5e-05, "head_lr": 0.0005}
+{"epoch": 9, "warmup": false, "loss": 3.867282176017761, "val_map50": 0.0799207913756093, "val_mean_iou": 0.36627704134413636, "val_class_accuracy": 0.44660194174757284, "backbone_lr": 2.5e-05, "head_lr": 0.0005}
+{"epoch": 10, "warmup": false, "loss": 3.8406785567601522, "val_map50": 0.08546246141011081, "val_mean_iou": 0.3677396101228709, "val_class_accuracy": 0.43042071197411, "backbone_lr": 2.5e-05, "head_lr": 0.0005}
+{"epoch": 11, "warmup": false, "loss": 3.818372710545858, "val_map50": 0.0784857351521, "val_mean_iou": 0.3635093236175738, "val_class_accuracy": 0.4368932038834951, "backbone_lr": 2.5e-05, "head_lr": 0.0005}
+{"epoch": 12, "warmup": false, "loss": 3.7223158439000446, "val_map50": 0.06686781155904505, "val_mean_iou": 0.35594013249833123, "val_class_accuracy": 0.4401294498381877, "backbone_lr": 2.5e-05, "head_lr": 0.0005}
+{"epoch": 13, "warmup": false, "loss": 3.745258617401123, "val_map50": 0.07716761360656121, "val_mean_iou": 0.3560303602990028, "val_class_accuracy": 0.44336569579288027, "backbone_lr": 2.5e-05, "head_lr": 0.0005}
+{"epoch": 14, "warmup": false, "loss": 3.647513993581136, "val_map50": 0.08272345290625359, "val_mean_iou": 0.36436728609015284, "val_class_accuracy": 0.44336569579288027, "backbone_lr": 1.25e-05, "head_lr": 0.00025}
+{"epoch": 15, "warmup": false, "loss": 3.7043708086013796, "val_map50": 0.0875142954752335, "val_mean_iou": 0.367383809520695, "val_class_accuracy": 0.44336569579288027, "backbone_lr": 1.25e-05, "head_lr": 0.00025}
+{"epoch": 16, "warmup": false, "loss": 3.653333846728007, "val_map50": 0.07855967768413556, "val_mean_iou": 0.3609642039980541, "val_class_accuracy": 0.4401294498381877, "backbone_lr": 1.25e-05, "head_lr": 0.00025}
+{"epoch": 17, "warmup": false, "loss": 3.599181365966797, "val_map50": 0.08543412967208071, "val_mean_iou": 0.35978880028721116, "val_class_accuracy": 0.44660194174757284, "backbone_lr": 1.25e-05, "head_lr": 0.00025}
+Training finished 42.668349300001864 seconds; best epoch 2

@@ -1,0 +1,66 @@
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/ndaqu/Documents/Basys3Classifier/fpga/rtl/classifier_core.sv" into library work
+INFO: [VRFC 10-311] analyzing module classifier_core
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/ndaqu/Documents/Basys3Classifier/fpga/sim/tb_core.sv" into library work
+INFO: [VRFC 10-311] analyzing module tb_core
+Vivado Simulator v2026.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/AMDDesignTools/2026.1/Vivado/bin/unwrapped/win64.o/xelab.exe tb_core -s classifier_core_sim -debug typical 
+Multi-threading is on. Using 14 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module work.classifier_core
+Compiling module work.tb_core
+Built simulation snapshot classifier_core_sim
+
+****** xsim v2026.1 (64-bit)
+  **** SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+  **** IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+  **** SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+  **** Start of session at: Thu Oct 29 13:03:21 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source xsim.dir/classifier_core_sim/xsim_script.tcl
+# xsim {classifier_core_sim} -autoloadwcfg -runall
+Time resolution is 1 ps
+run -all
+PASS case=0 layer=0 bytes=18432
+PASS case=0 layer=1 bytes=4608
+PASS case=0 layer=2 bytes=9216
+PASS case=0 layer=3 bytes=2304
+PASS case=0 layer=4 bytes=4608
+PASS case=0 layer=5 bytes=1152
+PASS case=0 layer=6 bytes=1728
+PASS case=0 layer=7 bytes=1728
+PASS case=0 layer=8 bytes=1728
+PASS FINAL case=0 class=2 confidence=23188 cycles=3674813
+PASS case=1 layer=0 bytes=18432
+PASS case=1 layer=1 bytes=4608
+PASS case=1 layer=2 bytes=9216
+PASS case=1 layer=3 bytes=2304
+PASS case=1 layer=4 bytes=4608
+PASS case=1 layer=5 bytes=1152
+PASS case=1 layer=6 bytes=1728
+PASS case=1 layer=7 bytes=1728
+PASS case=1 layer=8 bytes=1728
+PASS FINAL case=1 class=3 confidence=54575 cycles=3674813
+PASS case=2 layer=0 bytes=18432
+PASS case=2 layer=1 bytes=4608
+PASS case=2 layer=2 bytes=9216
+PASS case=2 layer=3 bytes=2304
+PASS case=2 layer=4 bytes=4608
+PASS case=2 layer=5 bytes=1152
+PASS case=2 layer=6 bytes=1728
+PASS case=2 layer=7 bytes=1728
+PASS case=2 layer=8 bytes=1728
+PASS FINAL case=2 class=0 confidence=58571 cycles=3674813
+ALL INTEGER LAYERS, POOL, LOGITS AND CONFIDENCE MATCH
+$finish called at time : 111074260 ns : File "C:/Users/ndaqu/Documents/Basys3Classifier/fpga/sim/tb_core.sv" Line 57
+run: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 236.422 ; gain = 0.000
+exit
+INFO: [Common 17-206] Exiting xsim at Thu Oct 29 13:03:31 2026...

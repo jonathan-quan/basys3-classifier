@@ -1,0 +1,56 @@
+{
+  "counts": {
+    "train": {
+      "positive": [
+        407,
+        465,
+        700,
+        298
+      ],
+      "negative": 64
+    },
+    "val": {
+      "positive": [
+        19,
+        93,
+        152,
+        64
+      ],
+      "negative": 14
+    },
+    "test": {
+      "positive": [
+        20,
+        106,
+        148,
+        67
+      ],
+      "negative": 13
+    }
+  },
+  "total": 2630,
+  "groups": 1524,
+  "annotation_status": {
+    "human_verified": 130,
+    "source_ground_truth": 2500
+  },
+  "sources": {
+    "https://storage.googleapis.com/openimages/web/download_v7.html": 2183,
+    "https://github.com/phonght32/yoloV2-detectRubik": 407,
+    "https://storage.googleapis.com/openimages/web/extended.html": 40
+  },
+  "quarantined": [],
+  "exact_duplicates_removed": [],
+  "incomplete_pilot": false,
+  "instance_disjoint": false,
+  "manifest_sha256": "62b87c3c121242c847639d0afafc1e44e2077c3df0d5eb0f71392e74c1d02837",
+  "inherited_manifest": "detection\\data\\full_manifest.jsonl",
+  "inherited_image_roles": 2630,
+  "data_signature_sha256": "9d35e0a2bf99936872aecc9b96ba0b09a7f677cd349f2b1825db9382cb6eb0c4",
+  "limitations": [
+    "Cube webcam source kept entirely train-only.",
+    "No personal webcam benchmark exists.",
+    "Public source metadata cannot prove all unknown capture/physical instance independence.",
+    "Reviewed original classifier val/test images are legacy benchmarks, not fresh detector holdouts."
+  ]
+}

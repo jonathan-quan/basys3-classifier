@@ -1,0 +1,490 @@
+[
+  {
+    "architecture": "baseline",
+    "input": [
+      3,
+      96,
+      96
+    ],
+    "parameters": 3252,
+    "weights": 3088,
+    "biases": 164,
+    "fp32_parameter_bytes": 13008,
+    "future_int8_weight_bytes": 3088,
+    "future_int32_bias_bytes": 656,
+    "macs": 773184,
+    "future_peak_live_activation_bytes": 46080,
+    "note": "INT8 figures are analytical payload estimates, not a quantized checkpoint or synthesis result.",
+    "layers": [
+      {
+        "layer": "features.0",
+        "shape": [
+          8,
+          48,
+          48
+        ],
+        "weights": 216,
+        "biases": 8,
+        "macs": 497664,
+        "activation_int8_bytes": 18432
+      },
+      {
+        "layer": "features.2",
+        "shape": [
+          8,
+          24,
+          24
+        ],
+        "weights": 72,
+        "biases": 8,
+        "macs": 41472,
+        "activation_int8_bytes": 4608
+      },
+      {
+        "layer": "features.4",
+        "shape": [
+          16,
+          24,
+          24
+        ],
+        "weights": 128,
+        "biases": 16,
+        "macs": 73728,
+        "activation_int8_bytes": 9216
+      },
+      {
+        "layer": "features.6",
+        "shape": [
+          16,
+          12,
+          12
+        ],
+        "weights": 144,
+        "biases": 16,
+        "macs": 20736,
+        "activation_int8_bytes": 2304
+      },
+      {
+        "layer": "features.8",
+        "shape": [
+          32,
+          12,
+          12
+        ],
+        "weights": 512,
+        "biases": 32,
+        "macs": 73728,
+        "activation_int8_bytes": 4608
+      },
+      {
+        "layer": "features.10",
+        "shape": [
+          32,
+          6,
+          6
+        ],
+        "weights": 288,
+        "biases": 32,
+        "macs": 10368,
+        "activation_int8_bytes": 1152
+      },
+      {
+        "layer": "features.12",
+        "shape": [
+          48,
+          6,
+          6
+        ],
+        "weights": 1536,
+        "biases": 48,
+        "macs": 55296,
+        "activation_int8_bytes": 1728
+      },
+      {
+        "layer": "fc",
+        "shape": [
+          4
+        ],
+        "weights": 192,
+        "biases": 4,
+        "macs": 192,
+        "activation_int8_bytes": 4
+      }
+    ]
+  },
+  {
+    "architecture": "context",
+    "input": [
+      3,
+      96,
+      96
+    ],
+    "parameters": 6084,
+    "weights": 5824,
+    "biases": 260,
+    "fp32_parameter_bytes": 24336,
+    "future_int8_weight_bytes": 5824,
+    "future_int32_bias_bytes": 1040,
+    "macs": 871680,
+    "future_peak_live_activation_bytes": 46080,
+    "note": "INT8 figures are analytical payload estimates, not a quantized checkpoint or synthesis result.",
+    "layers": [
+      {
+        "layer": "features.0",
+        "shape": [
+          8,
+          48,
+          48
+        ],
+        "weights": 216,
+        "biases": 8,
+        "macs": 497664,
+        "activation_int8_bytes": 18432
+      },
+      {
+        "layer": "features.2",
+        "shape": [
+          8,
+          24,
+          24
+        ],
+        "weights": 72,
+        "biases": 8,
+        "macs": 41472,
+        "activation_int8_bytes": 4608
+      },
+      {
+        "layer": "features.4",
+        "shape": [
+          16,
+          24,
+          24
+        ],
+        "weights": 128,
+        "biases": 16,
+        "macs": 73728,
+        "activation_int8_bytes": 9216
+      },
+      {
+        "layer": "features.6",
+        "shape": [
+          16,
+          12,
+          12
+        ],
+        "weights": 144,
+        "biases": 16,
+        "macs": 20736,
+        "activation_int8_bytes": 2304
+      },
+      {
+        "layer": "features.8",
+        "shape": [
+          32,
+          12,
+          12
+        ],
+        "weights": 512,
+        "biases": 32,
+        "macs": 73728,
+        "activation_int8_bytes": 4608
+      },
+      {
+        "layer": "features.10",
+        "shape": [
+          32,
+          6,
+          6
+        ],
+        "weights": 288,
+        "biases": 32,
+        "macs": 10368,
+        "activation_int8_bytes": 1152
+      },
+      {
+        "layer": "features.12",
+        "shape": [
+          48,
+          6,
+          6
+        ],
+        "weights": 1536,
+        "biases": 48,
+        "macs": 55296,
+        "activation_int8_bytes": 1728
+      },
+      {
+        "layer": "features.14",
+        "shape": [
+          48,
+          6,
+          6
+        ],
+        "weights": 432,
+        "biases": 48,
+        "macs": 15552,
+        "activation_int8_bytes": 1728
+      },
+      {
+        "layer": "features.16",
+        "shape": [
+          48,
+          6,
+          6
+        ],
+        "weights": 2304,
+        "biases": 48,
+        "macs": 82944,
+        "activation_int8_bytes": 1728
+      },
+      {
+        "layer": "fc",
+        "shape": [
+          4
+        ],
+        "weights": 192,
+        "biases": 4,
+        "macs": 192,
+        "activation_int8_bytes": 4
+      }
+    ]
+  },
+  {
+    "architecture": "context2",
+    "input": [
+      3,
+      96,
+      96
+    ],
+    "parameters": 8916,
+    "weights": 8560,
+    "biases": 356,
+    "fp32_parameter_bytes": 35664,
+    "future_int8_weight_bytes": 8560,
+    "future_int32_bias_bytes": 1424,
+    "macs": 970176,
+    "future_peak_live_activation_bytes": 46080,
+    "note": "INT8 figures are analytical payload estimates, not a quantized checkpoint or synthesis result.",
+    "layers": [
+      {
+        "layer": "features.0",
+        "shape": [
+          8,
+          48,
+          48
+        ],
+        "weights": 216,
+        "biases": 8,
+        "macs": 497664,
+        "activation_int8_bytes": 18432
+      },
+      {
+        "layer": "features.2",
+        "shape": [
+          8,
+          24,
+          24
+        ],
+        "weights": 72,
+        "biases": 8,
+        "macs": 41472,
+        "activation_int8_bytes": 4608
+      },
+      {
+        "layer": "features.4",
+        "shape": [
+          16,
+          24,
+          24
+        ],
+        "weights": 128,
+        "biases": 16,
+        "macs": 73728,
+        "activation_int8_bytes": 9216
+      },
+      {
+        "layer": "features.6",
+        "shape": [
+          16,
+          12,
+          12
+        ],
+        "weights": 144,
+        "biases": 16,
+        "macs": 20736,
+        "activation_int8_bytes": 2304
+      },
+      {
+        "layer": "features.8",
+        "shape": [
+          32,
+          12,
+          12
+        ],
+        "weights": 512,
+        "biases": 32,
+        "macs": 73728,
+        "activation_int8_bytes": 4608
+      },
+      {
+        "layer": "features.10",
+        "shape": [
+          32,
+          6,
+          6
+        ],
+        "weights": 288,
+        "biases": 32,
+        "macs": 10368,
+        "activation_int8_bytes": 1152
+      },
+      {
+        "layer": "features.12",
+        "shape": [
+          48,
+          6,
+          6
+        ],
+        "weights": 1536,
+        "biases": 48,
+        "macs": 55296,
+        "activation_int8_bytes": 1728
+      },
+      {
+        "layer": "features.14",
+        "shape": [
+          48,
+          6,
+          6
+        ],
+        "weights": 432,
+        "biases": 48,
+        "macs": 15552,
+        "activation_int8_bytes": 1728
+      },
+      {
+        "layer": "features.16",
+        "shape": [
+          48,
+          6,
+          6
+        ],
+        "weights": 2304,
+        "biases": 48,
+        "macs": 82944,
+        "activation_int8_bytes": 1728
+      },
+      {
+        "layer": "features.18",
+        "shape": [
+          48,
+          6,
+          6
+        ],
+        "weights": 432,
+        "biases": 48,
+        "macs": 15552,
+        "activation_int8_bytes": 1728
+      },
+      {
+        "layer": "features.20",
+        "shape": [
+          48,
+          6,
+          6
+        ],
+        "weights": 2304,
+        "biases": 48,
+        "macs": 82944,
+        "activation_int8_bytes": 1728
+      },
+      {
+        "layer": "fc",
+        "shape": [
+          4
+        ],
+        "weights": 192,
+        "biases": 4,
+        "macs": 192,
+        "activation_int8_bytes": 4
+      }
+    ]
+  },
+  {
+    "architecture": "standard",
+    "input": [
+      3,
+      96,
+      96
+    ],
+    "parameters": 20100,
+    "weights": 19992,
+    "biases": 108,
+    "fp32_parameter_bytes": 80400,
+    "future_int8_weight_bytes": 19992,
+    "future_int32_bias_bytes": 432,
+    "macs": 2322624,
+    "future_peak_live_activation_bytes": 46080,
+    "note": "INT8 figures are analytical payload estimates, not a quantized checkpoint or synthesis result.",
+    "layers": [
+      {
+        "layer": "features.0",
+        "shape": [
+          8,
+          48,
+          48
+        ],
+        "weights": 216,
+        "biases": 8,
+        "macs": 497664,
+        "activation_int8_bytes": 18432
+      },
+      {
+        "layer": "features.2",
+        "shape": [
+          16,
+          24,
+          24
+        ],
+        "weights": 1152,
+        "biases": 16,
+        "macs": 663552,
+        "activation_int8_bytes": 9216
+      },
+      {
+        "layer": "features.4",
+        "shape": [
+          32,
+          12,
+          12
+        ],
+        "weights": 4608,
+        "biases": 32,
+        "macs": 663552,
+        "activation_int8_bytes": 4608
+      },
+      {
+        "layer": "features.6",
+        "shape": [
+          48,
+          6,
+          6
+        ],
+        "weights": 13824,
+        "biases": 48,
+        "macs": 497664,
+        "activation_int8_bytes": 1728
+      },
+      {
+        "layer": "fc",
+        "shape": [
+          4
+        ],
+        "weights": 192,
+        "biases": 4,
+        "macs": 192,
+        "activation_int8_bytes": 4
+      }
+    ]
+  }
+]

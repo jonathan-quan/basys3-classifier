@@ -1,0 +1,27 @@
+Opening recognition comparison. No training and no bounding boxes.
+Focus the video window: 1 original, 2 detector, Tab to switch, Q to quit.
+{
+  "available": {
+    "original": {
+      "name": "Original classifier",
+      "checkpoint": "C:\\Users\\ndaqu\\Documents\\Basys3Classifier\\best_model.pth",
+      "status": "Historical public-data test accuracy: 76.53%; live accuracy unmeasured",
+      "epoch": 46
+    },
+    "detector": {
+      "name": "Detector classification head",
+      "checkpoint": "C:\\Users\\ndaqu\\Documents\\Basys3Classifier\\detection\\runs\\reviewed_cosine\\best_detector.pth",
+      "epoch": 2,
+      "status": "Training run finished; experimental checkpoint; detector test pending",
+      "training_finished": true,
+      "held_out_detector_test_found": false
+    }
+  },
+  "unavailable": {},
+  "classification_weights_identical": true,
+  "score_definition": "Maximum four-class softmax, NOT presence or joint detection confidence",
+  "training_performed": false,
+  "bounding_boxes_used": false
+}
+{"model": "original", "class_id": 2, "name": "Book", "class_score": 0.3809153735637665, "all_class_scores": [0.1887790411710739, 0.3141811490058899, 0.3809153735637665, 0.11612436920404434], "model_ms": 218.8882000000376, "shared_full_frame": false}
+{"model": "detector", "class_id": 2, "name": "Book", "class_score": 0.6562662124633789, "all_class_scores": [0.008751880377531052, 0.29418644309043884, 0.6562662124633789, 0.040795501321554184], "model_ms": 19.240500000250904, "shared_full_frame": false}

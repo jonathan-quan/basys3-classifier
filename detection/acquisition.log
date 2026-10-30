@@ -1,0 +1,19 @@
+Metadata cached validation-boxes.csv
+Metadata cached validation-metadata.csv
+Metadata cached test-boxes.csv
+Metadata cached test-metadata.csv
+OI eligible before caps {'pen': 85, 'mouse': 78, 'book': 53} selected {1: 85, 3: 78, 2: 53} excluded {'multiple_supported_instances': 307, 'annotation_flags': 91, 'rotation_not_zero': 39}
+C:\Users\ndaqu\Documents\Basys3Classifier\detection\fetch_data.py:76: DeprecationWarning: Image.Image.getdata is deprecated and will be removed in Pillow 14 (2027-10-15). Use get_flattened_data instead.
+  tiny = list(image.convert("L").resize((9,8)).getdata())
+OI image downloads 100 / 216
+OI image downloads 200 / 216
+OI image downloads 216 / 216
+Cube downloads 100 / 800
+Cube downloads 200 / 800
+Cube downloads 300 / 800
+Cube downloads 400 / 800
+Cube downloads 500 / 800
+Cube downloads 600 / 800
+Cube downloads 700 / 800
+Cube downloads 800 / 800
+Accepted provided annotations {'pen': 85, 'mouse': 78, 'book': 53, 'rubiks_cube': 407}

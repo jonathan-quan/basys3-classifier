@@ -1,0 +1,219 @@
+{
+  "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+  "executable": "C:\\Users\\ndaqu\\Documents\\Basys3Classifier\\.venv\\Scripts\\python.exe",
+  "platform": "Windows-10-10.0.26300-SP0",
+  "torch": "2.14.1+cu130",
+  "cuda_build": "13.0",
+  "cuda_available": true,
+  "gpu": "NVIDIA GeForce RTX 5060 Laptop GPU",
+  "gpu_vram_bytes": 8546484224,
+  "selected_device": "cuda"
+}
+Epoch 001 train=31.94% val=41.30% val_loss=1.3085 time=6.03s [best]
+Epoch 002 train=44.79% val=44.13% val_loss=1.2151 time=4.61s [best]
+Epoch 003 train=50.41% val=45.65% val_loss=1.2390 time=4.63s [best]
+Epoch 004 train=51.09% val=49.13% val_loss=1.1311 time=5.42s [best]
+Epoch 005 train=54.19% val=53.91% val_loss=1.1058 time=5.72s [best]
+Epoch 006 train=56.10% val=56.30% val_loss=1.0370 time=5.11s [best]
+Epoch 007 train=57.19% val=58.26% val_loss=1.0208 time=5.68s [best]
+Epoch 008 train=60.94% val=56.74% val_loss=0.9892 time=4.93s
+Epoch 009 train=61.28% val=59.78% val_loss=0.9557 time=4.80s [best]
+Epoch 010 train=61.55% val=61.30% val_loss=0.9003 time=4.77s [best]
+Epoch 011 train=65.17% val=59.78% val_loss=0.9416 time=4.75s
+Epoch 012 train=63.33% val=61.74% val_loss=0.8857 time=4.81s [best]
+Epoch 013 train=65.37% val=65.22% val_loss=0.8367 time=4.84s [best]
+Epoch 014 train=68.27% val=63.48% val_loss=0.8355 time=4.72s
+Epoch 015 train=67.01% val=66.30% val_loss=0.8156 time=4.45s [best]
+Epoch 016 train=68.68% val=67.39% val_loss=0.7963 time=4.58s [best]
+Epoch 017 train=67.86% val=68.26% val_loss=0.7700 time=4.53s [best]
+Epoch 018 train=68.68% val=67.61% val_loss=0.7791 time=4.62s
+Epoch 019 train=67.72% val=64.35% val_loss=0.7986 time=4.42s
+Epoch 020 train=69.43% val=69.13% val_loss=0.7641 time=4.36s [best]
+Epoch 021 train=70.55% val=66.30% val_loss=0.8035 time=5.52s
+Epoch 022 train=71.37% val=66.30% val_loss=0.7712 time=6.83s
+Epoch 023 train=71.61% val=68.26% val_loss=0.7625 time=5.62s
+Epoch 024 train=70.93% val=65.43% val_loss=0.7913 time=5.08s
+Epoch 025 train=71.20% val=73.04% val_loss=0.7135 time=5.00s [best]
+Epoch 026 train=72.29% val=69.57% val_loss=0.7092 time=4.70s
+Epoch 027 train=72.67% val=71.09% val_loss=0.7510 time=4.63s
+Epoch 028 train=75.22% val=70.00% val_loss=0.7359 time=4.66s
+Epoch 029 train=73.86% val=70.43% val_loss=0.7373 time=4.86s
+Epoch 030 train=75.90% val=71.09% val_loss=0.7350 time=4.82s
+Epoch 031 train=74.54% val=67.61% val_loss=0.8385 time=4.58s
+Epoch 032 train=74.64% val=71.74% val_loss=0.6904 time=4.64s
+Epoch 033 train=74.81% val=71.96% val_loss=0.7175 time=4.67s
+Epoch 034 train=74.37% val=70.00% val_loss=0.7197 time=4.86s
+Epoch 035 train=77.37% val=69.78% val_loss=0.7099 time=4.80s
+Epoch 036 train=77.64% val=69.78% val_loss=0.7272 time=5.33s
+Epoch 037 train=77.13% val=71.74% val_loss=0.7014 time=5.71s
+Epoch 038 train=78.63% val=71.09% val_loss=0.7516 time=5.81s
+Epoch 039 train=77.06% val=70.87% val_loss=0.7180 time=5.51s
+Epoch 040 train=77.06% val=72.39% val_loss=0.6966 time=5.39s
+Early stopping after 15 epochs without a better validation checkpoint
+{
+  "accuracy": 0.7282608695652174,
+  "examples": 460,
+  "confusion_matrix": [
+    [
+      36,
+      1,
+      4,
+      2
+    ],
+    [
+      4,
+      79,
+      44,
+      9
+    ],
+    [
+      5,
+      13,
+      105,
+      9
+    ],
+    [
+      3,
+      12,
+      19,
+      115
+    ]
+  ],
+  "per_class": {
+    "rubiks_cube": {
+      "precision": 0.75,
+      "recall": 0.8372093023255814,
+      "accuracy_within_class": 0.8372093023255814,
+      "f1": 0.7912087912087912,
+      "support": 43,
+      "correct": 36
+    },
+    "pen": {
+      "precision": 0.7523809523809524,
+      "recall": 0.5808823529411765,
+      "accuracy_within_class": 0.5808823529411765,
+      "f1": 0.6556016597510373,
+      "support": 136,
+      "correct": 79
+    },
+    "book": {
+      "precision": 0.6104651162790697,
+      "recall": 0.7954545454545454,
+      "accuracy_within_class": 0.7954545454545454,
+      "f1": 0.6907894736842105,
+      "support": 132,
+      "correct": 105
+    },
+    "mouse": {
+      "precision": 0.8518518518518519,
+      "recall": 0.7718120805369127,
+      "accuracy_within_class": 0.7718120805369127,
+      "f1": 0.8098591549295776,
+      "support": 149,
+      "correct": 115
+    }
+  },
+  "macro_f1": 0.7368647698934041,
+  "balanced_accuracy": 0.7463395703145541,
+  "accuracy_95pct_wilson_interval": [
+    0.6858415777243198,
+    0.7668991855017472
+  ],
+  "interval_note": "Assumes independent examples; image correlation can understate uncertainty.",
+  "class_order": [
+    "rubiks_cube",
+    "pen",
+    "book",
+    "mouse"
+  ],
+  "split": "val",
+  "checkpoint": "C:\\Users\\ndaqu\\Documents\\Basys3Classifier\\runs\\context2_balanced\\best_model.pth",
+  "checkpoint_sha256": "882fc68eb3577ebacc6693aa19b3a5539f607b9a08ded6ea28c8ab95f0358ccc",
+  "manifest_sha256": "571c2377de21eace6d06aec7ee99fecf023587e3cf0b30a5020c795d48042cce",
+  "evaluation_scope": "frozen_public_or_local_split",
+  "smoke_test": false
+}
+{
+  "accuracy": 0.7972051806407635,
+  "examples": 2934,
+  "confusion_matrix": [
+    [
+      907,
+      3,
+      6,
+      7
+    ],
+    [
+      53,
+      408,
+      163,
+      40
+    ],
+    [
+      47,
+      109,
+      480,
+      30
+    ],
+    [
+      36,
+      40,
+      61,
+      544
+    ]
+  ],
+  "per_class": {
+    "rubiks_cube": {
+      "precision": 0.8696069031639502,
+      "recall": 0.9826652221018418,
+      "accuracy_within_class": 0.9826652221018418,
+      "f1": 0.9226856561546287,
+      "support": 923,
+      "correct": 907
+    },
+    "pen": {
+      "precision": 0.7285714285714285,
+      "recall": 0.6144578313253012,
+      "accuracy_within_class": 0.6144578313253012,
+      "f1": 0.6666666666666666,
+      "support": 664,
+      "correct": 408
+    },
+    "book": {
+      "precision": 0.676056338028169,
+      "recall": 0.7207207207207207,
+      "accuracy_within_class": 0.7207207207207207,
+      "f1": 0.6976744186046512,
+      "support": 666,
+      "correct": 480
+    },
+    "mouse": {
+      "precision": 0.8760064412238325,
+      "recall": 0.7988252569750367,
+      "accuracy_within_class": 0.7988252569750367,
+      "f1": 0.8356374807987712,
+      "support": 681,
+      "correct": 544
+    }
+  },
+  "macro_f1": 0.7806660555561794,
+  "balanced_accuracy": 0.7791672577807252,
+  "accuracy_95pct_wilson_interval": [
+    0.7822716568528708,
+    0.8113614375930654
+  ],
+  "interval_note": "Assumes independent examples; image correlation can understate uncertainty.",
+  "class_order": [
+    "rubiks_cube",
+    "pen",
+    "book",
+    "mouse"
+  ],
+  "split": "train",
+  "checkpoint": "C:\\Users\\ndaqu\\Documents\\Basys3Classifier\\runs\\context2_balanced\\best_model.pth",
+  "checkpoint_sha256": "882fc68eb3577ebacc6693aa19b3a5539f607b9a08ded6ea28c8ab95f0358ccc",
+  "manifest_sha256": "571c2377de21eace6d06aec7ee99fecf023587e3cf0b30a5020c795d48042cce",
+  "evaluation_scope": "frozen_public_or_local_split",
+  "smoke_test": false
+}
+SUMMARY {"status": "trained", "training_parameters": 9268, "training_batch_norm_folded": true, "source_balanced_sampling": true, "architecture": "context2", "device": "cuda", "epochs_completed": 40, "best_epoch": 25, "training_seconds": 201.1826208, "training_accuracy_unaugmented": 0.7972051806407635, "validation_accuracy": 0.7282608695652174, "test_accuracy": null, "test_status": "not evaluated; reserved", "checkpoint_path": "C:\\Users\\ndaqu\\Documents\\Basys3Classifier\\runs\\context2_balanced\\best_model.pth", "checkpoint_file_bytes": 44021, "model": {"architecture": "context2", "input": [3, 96, 96], "parameters": 8916, "weights": 8560, "biases": 356, "fp32_parameter_bytes": 35664, "future_int8_weight_bytes": 8560, "future_int32_bias_bytes": 1424, "macs": 970176, "future_peak_live_activation_bytes": 46080, "note": "INT8 figures are analytical payload estimates, not a quantized checkpoint or synthesis result.", "layers": [{"layer": "features.0", "shape": [8, 48, 48], "weights": 216, "biases": 8, "macs": 497664, "activation_int8_bytes": 18432}, {"layer": "features.2", "shape": [8, 24, 24], "weights": 72, "biases": 8, "macs": 41472, "activation_int8_bytes": 4608}, {"layer": "features.4", "shape": [16, 24, 24], "weights": 128, "biases": 16, "macs": 73728, "activation_int8_bytes": 9216}, {"layer": "features.6", "shape": [16, 12, 12], "weights": 144, "biases": 16, "macs": 20736, "activation_int8_bytes": 2304}, {"layer": "features.8", "shape": [32, 12, 12], "weights": 512, "biases": 32, "macs": 73728, "activation_int8_bytes": 4608}, {"layer": "features.10", "shape": [32, 6, 6], "weights": 288, "biases": 32, "macs": 10368, "activation_int8_bytes": 1152}, {"layer": "features.12", "shape": [48, 6, 6], "weights": 1536, "biases": 48, "macs": 55296, "activation_int8_bytes": 1728}, {"layer": "features.14", "shape": [48, 6, 6], "weights": 432, "biases": 48, "macs": 15552, "activation_int8_bytes": 1728}, {"layer": "features.16", "shape": [48, 6, 6], "weights": 2304, "biases": 48, "macs": 82944, "activation_int8_bytes": 1728}, {"layer": "features.18", "shape": [48, 6, 6], "weights": 432, "biases": 48, "macs": 15552, "activation_int8_bytes": 1728}, {"layer": "features.20", "shape": [48, 6, 6], "weights": 2304, "biases": 48, "macs": 82944, "activation_int8_bytes": 1728}, {"layer": "fc", "shape": [4], "weights": 192, "biases": 4, "macs": 192, "activation_int8_bytes": 4}]}, "counts": {"train": {"rubiks_cube": 923, "pen": 664, "book": 666, "mouse": 681}, "val": {"rubiks_cube": 43, "pen": 136, "book": 132, "mouse": 149}, "test": {"rubiks_cube": 34, "pen": 148, "book": 138, "mouse": 170}}, "peak_cuda_allocated_bytes": 101242880, "limitations": ["FP32 model; INT8 accuracy has not been measured.", "Public dataset accuracy does not establish accuracy on your physical objects.", "Source/author grouping cannot prove unknown capture-session independence."]}

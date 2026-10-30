@@ -1,0 +1,39 @@
+Metadata cached train-boxes.csv
+Metadata cached train-metadata.csv
+Metadata cached validation-boxes.csv
+Metadata cached validation-metadata.csv
+Metadata cached test-boxes.csv
+Metadata cached test-metadata.csv
+OI eligible before caps {'book': 2366, 'pen': 675, 'mouse': 536} selected {2: 1000, 1: 664, 3: 429} excluded {'multiple_supported_instances': 4839, 'rotation_not_zero': 764, 'annotation_flags': 961, 'less_than_two_resized_pixels': 4}
+C:\Users\ndaqu\Documents\Basys3Classifier\detection\fetch_data.py:76: DeprecationWarning: Image.Image.getdata is deprecated and will be removed in Pillow 14 (2027-10-15). Use get_flattened_data instead.
+  tiny = list(image.convert("L").resize((9,8)).getdata())
+OI image downloads 100 / 2093
+OI image downloads 200 / 2093
+OI image downloads 300 / 2093
+OI image downloads 400 / 2093
+OI image downloads 500 / 2093
+OI image downloads 600 / 2093
+OI image downloads 700 / 2093
+OI image downloads 800 / 2093
+OI image downloads 900 / 2093
+OI image downloads 1000 / 2093
+OI image downloads 1100 / 2093
+OI image downloads 1200 / 2093
+OI image downloads 1300 / 2093
+OI image downloads 1400 / 2093
+OI image downloads 1500 / 2093
+OI image downloads 1600 / 2093
+OI image downloads 1700 / 2093
+OI image downloads 1800 / 2093
+OI image downloads 1900 / 2093
+OI image downloads 2000 / 2093
+OI image downloads 2093 / 2093
+Cube downloads 100 / 800
+Cube downloads 200 / 800
+Cube downloads 300 / 800
+Cube downloads 400 / 800
+Cube downloads 500 / 800
+Cube downloads 600 / 800
+Cube downloads 700 / 800
+Cube downloads 800 / 800
+Accepted provided annotations {'pen': 664, 'book': 1000, 'mouse': 429, 'rubiks_cube': 407}

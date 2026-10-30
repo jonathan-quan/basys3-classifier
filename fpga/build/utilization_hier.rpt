@@ -1,0 +1,32 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2026.1 (win64) Build 6511674 Tue Jun 16 11:02:23 MDT 2026
+| Date         : Thu Oct 29 13:18:49 2026
+| Host         : admin running 64-bit major release  (build 9200)
+| Command      : report_utilization -hierarchical -file fpga/build/utilization_hier.rpt
+| Design       : basys3_classifier
+| Device       : xc7a35tcpg236-1
+| Speed File   : -1
+| Design State : Routed
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Utilization Design Information
+
+Table of Contents
+-----------------
+1. Utilization by Hierarchy
+
+1. Utilization by Hierarchy
+---------------------------
+
++-----------------------+-----------------+------------+------------+---------+------+------+--------+--------+------------+
+|        Instance       |      Module     | Total LUTs | Logic LUTs | LUTRAMs | SRLs |  FFs | RAMB36 | RAMB18 | DSP Blocks |
++-----------------------+-----------------+------------+------------+---------+------+------+--------+--------+------------+
+| basys3_classifier     |           (top) |       2636 |       2624 |      12 |    0 | 1446 |     16 |      3 |          7 |
+|   (basys3_classifier) |           (top) |        169 |        169 |       0 |    0 |  662 |      0 |      0 |          0 |
+|   u_core              | classifier_core |       2162 |       2150 |      12 |    0 |  712 |     16 |      3 |          7 |
+|   u_rx                |         uart_rx |        266 |        266 |       0 |    0 |   42 |      0 |      0 |          0 |
++-----------------------+-----------------+------------+------------+---------+------+------+--------+--------+------------+
+* Note: The sum of lower-level cells may be larger than their parent cells total, due to cross-hierarchy LUT combining
+
+

@@ -1,0 +1,459 @@
+{
+  "selection": {
+    "date": "2026-10-28",
+    "criterion": "highest validation accuracy; fewer inference parameters as tie-breaker",
+    "selected_run": "context_balanced",
+    "baseline_reference_run": "baseline_balanced",
+    "selection_frozen_before_test": true,
+    "selected_architecture": "context",
+    "selected_parameters": 6084,
+    "validation_accuracy": 0.7347826086956522,
+    "manifest_sha256": "571c2377de21eace6d06aec7ee99fecf023587e3cf0b30a5020c795d48042cce",
+    "candidates": {
+      "baseline": {
+        "validation_accuracy": 0.6217391304347826,
+        "parameters": 3252,
+        "training_seconds": 425.4846498
+      },
+      "baseline_balanced": {
+        "validation_accuracy": 0.6282608695652174,
+        "parameters": 3252,
+        "training_seconds": 203.4563303
+      },
+      "context_balanced": {
+        "validation_accuracy": 0.7347826086956522,
+        "parameters": 6084,
+        "training_seconds": 248.7223906999999
+      },
+      "context2_balanced": {
+        "validation_accuracy": 0.7282608695652174,
+        "parameters": 8916,
+        "training_seconds": 201.1826208
+      },
+      "standard_balanced": {
+        "validation_accuracy": 0.7086956521739131,
+        "parameters": 20100,
+        "training_seconds": 343.6397026999998
+      }
+    }
+  },
+  "selected_run": {
+    "status": "trained",
+    "training_parameters": 6340,
+    "training_batch_norm_folded": true,
+    "source_balanced_sampling": true,
+    "architecture": "context",
+    "device": "cuda",
+    "epochs_completed": 61,
+    "best_epoch": 46,
+    "training_seconds": 248.7223906999999,
+    "training_accuracy_unaugmented": 0.8340149965916837,
+    "validation_accuracy": 0.7347826086956522,
+    "test_accuracy": 0.7653061224489796,
+    "test_status": "evaluated after validation selection",
+    "checkpoint_path": "C:\\Users\\ndaqu\\Documents\\Basys3Classifier\\runs\\context_balanced\\best_model.pth",
+    "checkpoint_file_bytes": 31605,
+    "model": {
+      "architecture": "context",
+      "input": [
+        3,
+        96,
+        96
+      ],
+      "parameters": 6084,
+      "weights": 5824,
+      "biases": 260,
+      "fp32_parameter_bytes": 24336,
+      "future_int8_weight_bytes": 5824,
+      "future_int32_bias_bytes": 1040,
+      "macs": 871680,
+      "future_peak_live_activation_bytes": 46080,
+      "note": "INT8 figures are analytical payload estimates, not a quantized checkpoint or synthesis result.",
+      "layers": [
+        {
+          "layer": "features.0",
+          "shape": [
+            8,
+            48,
+            48
+          ],
+          "weights": 216,
+          "biases": 8,
+          "macs": 497664,
+          "activation_int8_bytes": 18432
+        },
+        {
+          "layer": "features.2",
+          "shape": [
+            8,
+            24,
+            24
+          ],
+          "weights": 72,
+          "biases": 8,
+          "macs": 41472,
+          "activation_int8_bytes": 4608
+        },
+        {
+          "layer": "features.4",
+          "shape": [
+            16,
+            24,
+            24
+          ],
+          "weights": 128,
+          "biases": 16,
+          "macs": 73728,
+          "activation_int8_bytes": 9216
+        },
+        {
+          "layer": "features.6",
+          "shape": [
+            16,
+            12,
+            12
+          ],
+          "weights": 144,
+          "biases": 16,
+          "macs": 20736,
+          "activation_int8_bytes": 2304
+        },
+        {
+          "layer": "features.8",
+          "shape": [
+            32,
+            12,
+            12
+          ],
+          "weights": 512,
+          "biases": 32,
+          "macs": 73728,
+          "activation_int8_bytes": 4608
+        },
+        {
+          "layer": "features.10",
+          "shape": [
+            32,
+            6,
+            6
+          ],
+          "weights": 288,
+          "biases": 32,
+          "macs": 10368,
+          "activation_int8_bytes": 1152
+        },
+        {
+          "layer": "features.12",
+          "shape": [
+            48,
+            6,
+            6
+          ],
+          "weights": 1536,
+          "biases": 48,
+          "macs": 55296,
+          "activation_int8_bytes": 1728
+        },
+        {
+          "layer": "features.14",
+          "shape": [
+            48,
+            6,
+            6
+          ],
+          "weights": 432,
+          "biases": 48,
+          "macs": 15552,
+          "activation_int8_bytes": 1728
+        },
+        {
+          "layer": "features.16",
+          "shape": [
+            48,
+            6,
+            6
+          ],
+          "weights": 2304,
+          "biases": 48,
+          "macs": 82944,
+          "activation_int8_bytes": 1728
+        },
+        {
+          "layer": "fc",
+          "shape": [
+            4
+          ],
+          "weights": 192,
+          "biases": 4,
+          "macs": 192,
+          "activation_int8_bytes": 4
+        }
+      ]
+    },
+    "counts": {
+      "train": {
+        "rubiks_cube": 923,
+        "pen": 664,
+        "book": 666,
+        "mouse": 681
+      },
+      "val": {
+        "rubiks_cube": 43,
+        "pen": 136,
+        "book": 132,
+        "mouse": 149
+      },
+      "test": {
+        "rubiks_cube": 34,
+        "pen": 148,
+        "book": 138,
+        "mouse": 170
+      }
+    },
+    "peak_cuda_allocated_bytes": 99428352,
+    "limitations": [
+      "FP32 model; INT8 accuracy has not been measured.",
+      "Public dataset accuracy does not establish accuracy on your physical objects.",
+      "Source/author grouping cannot prove unknown capture-session independence."
+    ]
+  },
+  "test": {
+    "accuracy": 0.7653061224489796,
+    "examples": 490,
+    "confusion_matrix": [
+      [
+        27,
+        5,
+        1,
+        1
+      ],
+      [
+        2,
+        99,
+        35,
+        12
+      ],
+      [
+        8,
+        18,
+        92,
+        20
+      ],
+      [
+        5,
+        4,
+        4,
+        157
+      ]
+    ],
+    "per_class": {
+      "rubiks_cube": {
+        "precision": 0.6428571428571429,
+        "recall": 0.7941176470588235,
+        "accuracy_within_class": 0.7941176470588235,
+        "f1": 0.7105263157894737,
+        "support": 34,
+        "correct": 27
+      },
+      "pen": {
+        "precision": 0.7857142857142857,
+        "recall": 0.668918918918919,
+        "accuracy_within_class": 0.668918918918919,
+        "f1": 0.7226277372262774,
+        "support": 148,
+        "correct": 99
+      },
+      "book": {
+        "precision": 0.696969696969697,
+        "recall": 0.6666666666666666,
+        "accuracy_within_class": 0.6666666666666666,
+        "f1": 0.6814814814814815,
+        "support": 138,
+        "correct": 92
+      },
+      "mouse": {
+        "precision": 0.8263157894736842,
+        "recall": 0.9235294117647059,
+        "accuracy_within_class": 0.9235294117647059,
+        "f1": 0.8722222222222223,
+        "support": 170,
+        "correct": 157
+      }
+    },
+    "macro_f1": 0.7467144391798637,
+    "balanced_accuracy": 0.7633081611022787,
+    "accuracy_95pct_wilson_interval": [
+      0.7258061104517141,
+      0.8006784951384184
+    ],
+    "interval_note": "Assumes independent examples; image correlation can understate uncertainty.",
+    "class_order": [
+      "rubiks_cube",
+      "pen",
+      "book",
+      "mouse"
+    ],
+    "split": "test",
+    "checkpoint": "C:\\Users\\ndaqu\\Documents\\Basys3Classifier\\runs\\context_balanced\\best_model.pth",
+    "checkpoint_sha256": "98c66c324f34d66a1c4d876ec3fcf05f6ed1f57f0df1a7c6733870fbb3e4cf61",
+    "manifest_sha256": "571c2377de21eace6d06aec7ee99fecf023587e3cf0b30a5020c795d48042cce",
+    "evaluation_scope": "frozen_public_or_local_split",
+    "smoke_test": false
+  },
+  "baseline_reference": {
+    "status": "trained",
+    "training_parameters": 3412,
+    "training_batch_norm_folded": true,
+    "source_balanced_sampling": true,
+    "architecture": "baseline",
+    "device": "cuda",
+    "epochs_completed": 64,
+    "best_epoch": 49,
+    "training_seconds": 203.4563303,
+    "training_accuracy_unaugmented": 0.7586912065439673,
+    "validation_accuracy": 0.6282608695652174,
+    "test_accuracy": 0.6795918367346939,
+    "test_status": "evaluated after validation selection",
+    "checkpoint_path": "C:\\Users\\ndaqu\\Documents\\Basys3Classifier\\runs\\baseline_balanced\\best_model.pth",
+    "checkpoint_file_bytes": 19189,
+    "model": {
+      "architecture": "baseline",
+      "input": [
+        3,
+        96,
+        96
+      ],
+      "parameters": 3252,
+      "weights": 3088,
+      "biases": 164,
+      "fp32_parameter_bytes": 13008,
+      "future_int8_weight_bytes": 3088,
+      "future_int32_bias_bytes": 656,
+      "macs": 773184,
+      "future_peak_live_activation_bytes": 46080,
+      "note": "INT8 figures are analytical payload estimates, not a quantized checkpoint or synthesis result.",
+      "layers": [
+        {
+          "layer": "features.0",
+          "shape": [
+            8,
+            48,
+            48
+          ],
+          "weights": 216,
+          "biases": 8,
+          "macs": 497664,
+          "activation_int8_bytes": 18432
+        },
+        {
+          "layer": "features.2",
+          "shape": [
+            8,
+            24,
+            24
+          ],
+          "weights": 72,
+          "biases": 8,
+          "macs": 41472,
+          "activation_int8_bytes": 4608
+        },
+        {
+          "layer": "features.4",
+          "shape": [
+            16,
+            24,
+            24
+          ],
+          "weights": 128,
+          "biases": 16,
+          "macs": 73728,
+          "activation_int8_bytes": 9216
+        },
+        {
+          "layer": "features.6",
+          "shape": [
+            16,
+            12,
+            12
+          ],
+          "weights": 144,
+          "biases": 16,
+          "macs": 20736,
+          "activation_int8_bytes": 2304
+        },
+        {
+          "layer": "features.8",
+          "shape": [
+            32,
+            12,
+            12
+          ],
+          "weights": 512,
+          "biases": 32,
+          "macs": 73728,
+          "activation_int8_bytes": 4608
+        },
+        {
+          "layer": "features.10",
+          "shape": [
+            32,
+            6,
+            6
+          ],
+          "weights": 288,
+          "biases": 32,
+          "macs": 10368,
+          "activation_int8_bytes": 1152
+        },
+        {
+          "layer": "features.12",
+          "shape": [
+            48,
+            6,
+            6
+          ],
+          "weights": 1536,
+          "biases": 48,
+          "macs": 55296,
+          "activation_int8_bytes": 1728
+        },
+        {
+          "layer": "fc",
+          "shape": [
+            4
+          ],
+          "weights": 192,
+          "biases": 4,
+          "macs": 192,
+          "activation_int8_bytes": 4
+        }
+      ]
+    },
+    "counts": {
+      "train": {
+        "rubiks_cube": 923,
+        "pen": 664,
+        "book": 666,
+        "mouse": 681
+      },
+      "val": {
+        "rubiks_cube": 43,
+        "pen": 136,
+        "book": 132,
+        "mouse": 149
+      },
+      "test": {
+        "rubiks_cube": 34,
+        "pen": 148,
+        "book": 138,
+        "mouse": 170
+      }
+    },
+    "peak_cuda_allocated_bytes": 97611776,
+    "limitations": [
+      "FP32 model; INT8 accuracy has not been measured.",
+      "Public dataset accuracy does not establish accuracy on your physical objects.",
+      "Source/author grouping cannot prove unknown capture-session independence."
+    ]
+  }
+}

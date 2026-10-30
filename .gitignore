@@ -1,0 +1,11 @@
+.venv/
+__pycache__/
+*.pyc
+data/raw/
+data/personal_raw/
+data/sources/
+data/review/
+runs/
+*.pth
+*.part
+

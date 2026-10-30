@@ -1,0 +1,14 @@
+test_audit_rejects_group_and_pixel_leakage (test_pipeline.PipelineTests.test_audit_rejects_group_and_pixel_leakage) ... ok
+test_bn_folding_preserves_outputs_and_inference_parameter_count (test_pipeline.PipelineTests.test_bn_folding_preserves_outputs_and_inference_parameter_count) ... ok
+test_confusion_matrix_and_class_recall (test_pipeline.PipelineTests.test_confusion_matrix_and_class_recall) ... ok
+test_end_to_end_smoke_is_explicitly_synthetic (test_pipeline.PipelineTests.test_end_to_end_smoke_is_explicitly_synthetic) ... ok
+test_exact_model_contract (test_pipeline.PipelineTests.test_exact_model_contract) ... ok
+test_optimizer_can_reduce_a_fixed_batch_loss (test_pipeline.PipelineTests.test_optimizer_can_reduce_a_fixed_batch_loss) ... ok
+test_preprocessing_matches_input_integer_convention (test_pipeline.PipelineTests.test_preprocessing_matches_input_integer_convention) ... ok
+test_related_images_join_before_splitting (test_pipeline.PipelineTests.test_related_images_join_before_splitting) ... ok
+test_source_sampler_has_equal_class_and_source_mass (test_pipeline.PipelineTests.test_source_sampler_has_equal_class_and_source_mass) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 3.942s
+
+OK

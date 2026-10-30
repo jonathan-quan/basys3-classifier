@@ -1,0 +1,65 @@
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/ndaqu/Documents/Basys3Classifier/fpga/rtl/classifier_core.sv" into library work
+INFO: [VRFC 10-311] analyzing module classifier_core
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/ndaqu/Documents/Basys3Classifier/fpga/sim/tb_core.sv" into library work
+INFO: [VRFC 10-311] analyzing module tb_core
+Vivado Simulator v2026.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/AMDDesignTools/2026.1/Vivado/bin/unwrapped/win64.o/xelab.exe tb_core -s classifier_core_sim -debug typical 
+Multi-threading is on. Using 14 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module work.classifier_core
+Compiling module work.tb_core
+Built simulation snapshot classifier_core_sim
+
+****** xsim v2026.1 (64-bit)
+  **** SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+  **** IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+  **** SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+  **** Start of session at: Wed Oct 28 21:38:49 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source xsim.dir/classifier_core_sim/xsim_script.tcl
+# xsim {classifier_core_sim} -autoloadwcfg -runall
+Time resolution is 1 ps
+run -all
+DBG tap ci=0 ky=0 kx=0 valid=0 src=x weight=-75 acc=-2217 rd=32709 wa=108
+DBG tap ci=0 ky=0 kx=1 valid=0 src=x weight=-127 acc=-2217 rd=32710 wa=109
+DBG tap ci=0 ky=0 kx=2 valid=0 src=x weight=12 acc=-2217 rd=32711 wa=110
+DBG tap ci=0 ky=1 kx=0 valid=1 src=39 weight=5 acc=-2217 rd=37 wa=111
+DBG tap ci=0 ky=1 kx=1 valid=1 src=45 weight=-30 acc=-2022 rd=38 wa=112
+DBG tap ci=0 ky=1 kx=2 valid=1 src=44 weight=-54 acc=-3372 rd=39 wa=113
+DBG tap ci=0 ky=2 kx=0 valid=1 src=-28 weight=-41 acc=-5748 rd=133 wa=114
+DBG tap ci=0 ky=2 kx=1 valid=1 src=-24 weight=94 acc=-4600 rd=134 wa=115
+DBG tap ci=0 ky=2 kx=2 valid=1 src=-24 weight=-12 acc=-6856 rd=135 wa=116
+DBG tap ci=1 ky=0 kx=0 valid=0 src=-87 weight=64 acc=-6568 rd=9157 wa=117
+DBG tap ci=1 ky=0 kx=1 valid=0 src=-87 weight=35 acc=-6568 rd=9158 wa=118
+DBG tap ci=1 ky=0 kx=2 valid=0 src=-85 weight=106 acc=-6568 rd=9159 wa=119
+DBG tap ci=1 ky=1 kx=0 valid=1 src=43 weight=87 acc=-6568 rd=9253 wa=120
+DBG tap ci=1 ky=1 kx=1 valid=1 src=49 weight=78 acc=-2827 rd=9254 wa=121
+DBG tap ci=1 ky=1 kx=2 valid=1 src=47 weight=84 acc=995 rd=9255 wa=122
+DBG tap ci=1 ky=2 kx=0 valid=1 src=-26 weight=35 acc=4943 rd=9349 wa=123
+DBG tap ci=1 ky=2 kx=1 valid=1 src=-21 weight=-65 acc=4033 rd=9350 wa=124
+DBG tap ci=1 ky=2 kx=2 valid=1 src=-21 weight=25 acc=5398 rd=9351 wa=125
+DBG tap ci=2 ky=0 kx=0 valid=0 src=-84 weight=-37 acc=4873 rd=18373 wa=126
+DBG tap ci=2 ky=0 kx=1 valid=0 src=-85 weight=-18 acc=4873 rd=18374 wa=127
+DBG tap ci=2 ky=0 kx=2 valid=0 src=-83 weight=-78 acc=4873 rd=18375 wa=128
+DBG tap ci=2 ky=1 kx=0 valid=1 src=48 weight=69 acc=4873 rd=18469 wa=129
+DBG tap ci=2 ky=1 kx=1 valid=1 src=53 weight=-15 acc=8185 rd=18470 wa=130
+DBG tap ci=2 ky=1 kx=2 valid=1 src=52 weight=-55 acc=7390 rd=18471 wa=131
+DBG tap ci=2 ky=2 kx=0 valid=1 src=-30 weight=-59 acc=4530 rd=18565 wa=132
+DBG tap ci=2 ky=2 kx=1 valid=1 src=-25 weight=-87 acc=6300 rd=18566 wa=133
+DBG tap ci=2 ky=2 kx=2 valid=1 src=-25 weight=0 acc=8475 rd=18567 wa=134
+DBG RQ acc=8475 mult=5218976 shift=0 bias=-2217
+DBG STORE product=44230821600 rounded=44230821600
+Fatal: Case 0 layer 0 index 9235 expected 21 actual 127
+Time: 20920695 ns  Iteration: 0  Process: /tb_core/Always26_8  Scope: tb_core.Block39_9  File: C:/Users/ndaqu/Documents/Basys3Classifier/fpga/sim/tb_core.sv Line: 41
+$finish called at time : 20920695 ns
+exit
+INFO: [Common 17-206] Exiting xsim at Wed Oct 28 21:38:52 2026...

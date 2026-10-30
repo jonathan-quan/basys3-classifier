@@ -1,0 +1,5 @@
+{
+    "model_id_hex":  "d70fd5dfdfad0b31",
+    "checks":  "HELLO, CRC rejection, bad configuration, full RGB image packet and exact output",
+    "passed":  true
+}

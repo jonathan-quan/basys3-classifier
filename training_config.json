@@ -1,0 +1,193 @@
+{
+  "manifest": "data/manifest.csv",
+  "output": "runs/context_balanced",
+  "architecture": "context",
+  "epochs": 80,
+  "patience": 15,
+  "batch_size": 64,
+  "learning_rate": 0.002,
+  "weight_decay": 0.0001,
+  "seed": 42,
+  "device": "auto",
+  "workers": 0,
+  "no_cache": false,
+  "evaluate_test": false,
+  "acknowledge_near_duplicates": false,
+  "smoke_test": false,
+  "balance_sources": true,
+  "batch_norm": true,
+  "environment": {
+    "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+    "executable": "C:\\Users\\ndaqu\\Documents\\Basys3Classifier\\.venv\\Scripts\\python.exe",
+    "platform": "Windows-10-10.0.26300-SP0",
+    "torch": "2.14.1+cu130",
+    "cuda_build": "13.0",
+    "cuda_available": true,
+    "gpu": "NVIDIA GeForce RTX 5060 Laptop GPU",
+    "gpu_vram_bytes": 8546484224,
+    "selected_device": "cuda"
+  },
+  "model": {
+    "architecture": "context",
+    "input": [
+      3,
+      96,
+      96
+    ],
+    "parameters": 6084,
+    "weights": 5824,
+    "biases": 260,
+    "fp32_parameter_bytes": 24336,
+    "future_int8_weight_bytes": 5824,
+    "future_int32_bias_bytes": 1040,
+    "macs": 871680,
+    "future_peak_live_activation_bytes": 46080,
+    "note": "INT8 figures are analytical payload estimates, not a quantized checkpoint or synthesis result.",
+    "layers": [
+      {
+        "layer": "features.0",
+        "shape": [
+          8,
+          48,
+          48
+        ],
+        "weights": 216,
+        "biases": 8,
+        "macs": 497664,
+        "activation_int8_bytes": 18432
+      },
+      {
+        "layer": "features.2",
+        "shape": [
+          8,
+          24,
+          24
+        ],
+        "weights": 72,
+        "biases": 8,
+        "macs": 41472,
+        "activation_int8_bytes": 4608
+      },
+      {
+        "layer": "features.4",
+        "shape": [
+          16,
+          24,
+          24
+        ],
+        "weights": 128,
+        "biases": 16,
+        "macs": 73728,
+        "activation_int8_bytes": 9216
+      },
+      {
+        "layer": "features.6",
+        "shape": [
+          16,
+          12,
+          12
+        ],
+        "weights": 144,
+        "biases": 16,
+        "macs": 20736,
+        "activation_int8_bytes": 2304
+      },
+      {
+        "layer": "features.8",
+        "shape": [
+          32,
+          12,
+          12
+        ],
+        "weights": 512,
+        "biases": 32,
+        "macs": 73728,
+        "activation_int8_bytes": 4608
+      },
+      {
+        "layer": "features.10",
+        "shape": [
+          32,
+          6,
+          6
+        ],
+        "weights": 288,
+        "biases": 32,
+        "macs": 10368,
+        "activation_int8_bytes": 1152
+      },
+      {
+        "layer": "features.12",
+        "shape": [
+          48,
+          6,
+          6
+        ],
+        "weights": 1536,
+        "biases": 48,
+        "macs": 55296,
+        "activation_int8_bytes": 1728
+      },
+      {
+        "layer": "features.14",
+        "shape": [
+          48,
+          6,
+          6
+        ],
+        "weights": 432,
+        "biases": 48,
+        "macs": 15552,
+        "activation_int8_bytes": 1728
+      },
+      {
+        "layer": "features.16",
+        "shape": [
+          48,
+          6,
+          6
+        ],
+        "weights": 2304,
+        "biases": 48,
+        "macs": 82944,
+        "activation_int8_bytes": 1728
+      },
+      {
+        "layer": "fc",
+        "shape": [
+          4
+        ],
+        "weights": 192,
+        "biases": 4,
+        "macs": 192,
+        "activation_int8_bytes": 4
+      }
+    ]
+  },
+  "training_parameters": 6340,
+  "counts": {
+    "train": {
+      "rubiks_cube": 923,
+      "pen": 664,
+      "book": 666,
+      "mouse": 681
+    },
+    "val": {
+      "rubiks_cube": 43,
+      "pen": 136,
+      "book": 132,
+      "mouse": 149
+    },
+    "test": {
+      "rubiks_cube": 34,
+      "pen": 148,
+      "book": 138,
+      "mouse": 170
+    }
+  },
+  "manifest_sha256": "571c2377de21eace6d06aec7ee99fecf023587e3cf0b30a5020c795d48042cce",
+  "near_duplicate_warning_count_capped": 0,
+  "synthetic": false,
+  "preprocessing": "RGB; EXIF transpose; aspect-preserving bilinear pad to 96x96, fill128; (pixel-128)/128",
+  "selection": "highest validation accuracy, then lowest validation loss; no test selection"
+}

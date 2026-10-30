@@ -1,0 +1,174 @@
+test_augmentation_boxes_remain_valid (test_detector.DetectorTests.test_augmentation_boxes_remain_valid) ... ok
+test_backbone_normalization_identity_transfer_and_folding (test_detector.DetectorTests.test_backbone_normalization_identity_transfer_and_folding) ... ok
+test_exact_profile_and_transfer_parity (test_detector.DetectorTests.test_exact_profile_and_transfer_parity) ... ok
+test_geometry_roundtrip_and_pixel_contract (test_detector.DetectorTests.test_geometry_roundtrip_and_pixel_contract) ... ok
+test_head_normalization_folds_without_changing_outputs (test_detector.DetectorTests.test_head_normalization_folds_without_changing_outputs) ... ok
+test_heads_receive_useful_gradients_and_learn (test_detector.DetectorTests.test_heads_receive_useful_gradients_and_learn) ... ok
+test_metrics_count_wrong_class_and_bad_box (test_detector.DetectorTests.test_metrics_count_wrong_class_and_bad_box) ... ok
+test_no_candidate_training_or_leakage (test_detector.DetectorTests.test_no_candidate_training_or_leakage) ... ok
+{
+  "device": "cpu",
+  "transfer": {
+    "checkpoint_sha256": "98c66c324f34d66a1c4d876ec3fcf05f6ed1f57f0df1a7c6733870fbb3e4cf61",
+    "parameters_transferred": 6084,
+    "tensors_transferred": 20,
+    "new_parameters": 1597
+  },
+  "counts": {
+    "train": {
+      "positive": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "negative": 1
+    },
+    "val": {
+      "positive": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "negative": 1
+    },
+    "test": {
+      "positive": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "negative": 1
+    }
+  },
+  "objectness_trained": true,
+  "pilot": false
+}
+{"epoch": 1, "warmup": false, "loss": 2.050361156463623, "val_map50": 0.125, "val_mean_iou": 0.763235867023468, "val_class_accuracy": 0.25, "backbone_lr": 1e-06, "head_lr": 1e-06}
+Training finished 0.06799089999913122 seconds; best epoch 1
+{
+  "images": 5,
+  "positive_images": 4,
+  "negative_images": 1,
+  "classification_accuracy_all_positives": 0.25,
+  "classification_accuracy_definition": "Argmax over four classes on all positive frames; ignores abstention. Detection recall counts abstentions as misses.",
+  "presence_precision": 0.8,
+  "presence_recall": 1.0,
+  "presence_false_positive_rate": 1.0,
+  "accepted_detection_false_positive_rate": 1.0,
+  "detection_precision": 0.2,
+  "detection_recall": 0.25,
+  "detection_tp": 1,
+  "detection_fp": 4,
+  "detection_fn": 3,
+  "mean_iou_all_positives": 0.7643401771783829,
+  "median_iou_all_positives": 0.7649330794811249,
+  "mean_iou_matched_only": 0.7684776186943054,
+  "map50_present_classes": 0.125,
+  "map50_95_present_classes": 0.075,
+  "missing_positive_classes": [],
+  "iou_threshold": 0.5,
+  "joint_score_threshold": 0.01,
+  "presence_threshold": 0.01,
+  "per_class": {
+    "rubiks_cube": {
+      "support": 1,
+      "classification_accuracy": 0.0,
+      "classification_precision": null,
+      "mean_iou_all_positives": 0.7590169310569763,
+      "detection_precision": null,
+      "detection_recall": 0.0,
+      "true_positives": 0,
+      "false_positives": 0,
+      "false_negatives": 1,
+      "ap50": 0.0,
+      "ap50_95": 0.0
+    },
+    "pen": {
+      "support": 1,
+      "classification_accuracy": 0.0,
+      "classification_precision": null,
+      "mean_iou_all_positives": 0.7664641737937927,
+      "detection_precision": null,
+      "detection_recall": 0.0,
+      "true_positives": 0,
+      "false_positives": 0,
+      "false_negatives": 1,
+      "ap50": 0.0,
+      "ap50_95": 0.0
+    },
+    "book": {
+      "support": 1,
+      "classification_accuracy": 1.0,
+      "classification_precision": 0.5,
+      "mean_iou_all_positives": 0.7684776186943054,
+      "detection_precision": 0.5,
+      "detection_recall": 1.0,
+      "true_positives": 1,
+      "false_positives": 1,
+      "false_negatives": 0,
+      "ap50": 0.5,
+      "ap50_95": 0.3
+    },
+    "mouse": {
+      "support": 1,
+      "classification_accuracy": 0.0,
+      "classification_precision": 0.0,
+      "mean_iou_all_positives": 0.763401985168457,
+      "detection_precision": 0.0,
+      "detection_recall": 0.0,
+      "true_positives": 0,
+      "false_positives": 3,
+      "false_negatives": 1,
+      "ap50": 0.0,
+      "ap50_95": 0.0
+    }
+  },
+  "classification_confusion_matrix": [
+    [
+      0,
+      0,
+      0,
+      1
+    ],
+    [
+      0,
+      0,
+      0,
+      1
+    ],
+    [
+      0,
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      1,
+      0
+    ]
+  ],
+  "metric_scope": "Custom single-object AP with 101 recall points and at most one prediction per image; missing classes excluded, not silently scored as zero.",
+  "checkpoint_sha256": "4d2c812b5e5402171ca9fdc20bd9f6e36657bd812efd9906f4d212a4008a028d",
+  "manifest_sha256": "4964a246a0b234e81283e1de44fa1519dfe0c0175cb348e818e991c060a7eb17",
+  "split": "test",
+  "incomplete_pilot": false,
+  "objectness_trained": true,
+  "hardware_tested": false,
+  "laptop_timing": {
+    "batched_model_seconds": 0.002333399999770336,
+    "batches": 1,
+    "batch_size": 64,
+    "note": "LAPTOP batched model timing, not webcam latency or FPGA inference."
+  }
+}
+test_synthetic_train_export_evaluate_workflow (test_detector.DetectorTests.test_synthetic_train_export_evaluate_workflow) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 2.284s
+
+OK

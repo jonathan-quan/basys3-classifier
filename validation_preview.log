@@ -1,0 +1,83 @@
+{
+  "accuracy": 0.5565217391304348,
+  "examples": 460,
+  "confusion_matrix": [
+    [
+      1,
+      5,
+      25,
+      12
+    ],
+    [
+      4,
+      61,
+      54,
+      17
+    ],
+    [
+      3,
+      19,
+      76,
+      34
+    ],
+    [
+      4,
+      15,
+      12,
+      118
+    ]
+  ],
+  "per_class": {
+    "rubiks_cube": {
+      "precision": 0.08333333333333333,
+      "recall": 0.023255813953488372,
+      "accuracy_within_class": 0.023255813953488372,
+      "f1": 0.03636363636363636,
+      "support": 43,
+      "correct": 1
+    },
+    "pen": {
+      "precision": 0.61,
+      "recall": 0.4485294117647059,
+      "accuracy_within_class": 0.4485294117647059,
+      "f1": 0.5169491525423728,
+      "support": 136,
+      "correct": 61
+    },
+    "book": {
+      "precision": 0.4550898203592814,
+      "recall": 0.5757575757575758,
+      "accuracy_within_class": 0.5757575757575758,
+      "f1": 0.508361204013378,
+      "support": 132,
+      "correct": 76
+    },
+    "mouse": {
+      "precision": 0.6519337016574586,
+      "recall": 0.7919463087248322,
+      "accuracy_within_class": 0.7919463087248322,
+      "f1": 0.7151515151515152,
+      "support": 149,
+      "correct": 118
+    }
+  },
+  "macro_f1": 0.4442063770177256,
+  "balanced_accuracy": 0.4598722775501506,
+  "accuracy_95pct_wilson_interval": [
+    0.5108397425832751,
+    0.6012674940250844
+  ],
+  "interval_note": "Assumes independent examples; image correlation can understate uncertainty.",
+  "class_order": [
+    "rubiks_cube",
+    "pen",
+    "book",
+    "mouse"
+  ],
+  "split": "val",
+  "checkpoint": "C:\\Users\\ndaqu\\Documents\\Basys3Classifier\\runs\\baseline\\best_model.pth",
+  "checkpoint_sha256": "83a9075970581063e03e22a4efe8f47e068c46b699a33fcdbc7acfecc1c4f4b3",
+  "manifest_sha256": "571c2377de21eace6d06aec7ee99fecf023587e3cf0b30a5020c795d48042cce",
+  "evaluation_scope": "frozen_public_or_local_split",
+  "smoke_test": false
+}

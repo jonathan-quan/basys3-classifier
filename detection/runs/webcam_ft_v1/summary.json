@@ -1,0 +1,77 @@
+{
+  "experiment": "w128_sa",
+  "best_epoch": 14,
+  "epochs": 80,
+  "training_seconds": 820.3799177000001,
+  "inference_parameters": 31977,
+  "macs": 4782880,
+  "input_size": 128,
+  "score_threshold_selected_on_validation": 0.73,
+  "presence_threshold_selected_on_validation": 0.47000000000000003,
+  "validation": {
+    "map50_present_classes": 0.7402894135567403,
+    "map50_95_present_classes": 0.31405565268192864,
+    "mean_iou_all_positives": 0.655993203906452,
+    "median_iou_all_positives": 0.6993100047111511,
+    "classification_accuracy_all_positives": 0.9882352941176471,
+    "detection_precision": 0.8571428571428571,
+    "detection_recall": 0.8470588235294118,
+    "accepted_detection_false_positive_rate": 0.16666666666666666
+  },
+  "validation_per_class": {
+    "rubiks_cube": {
+      "ap50": 0.9504950495049505,
+      "mean_iou_all_positives": 0.6677772626280785,
+      "classification_accuracy": 1.0,
+      "support": 24
+    },
+    "pen": {
+      "ap50": 0.05026656511805026,
+      "mean_iou_all_positives": 0.38456510433128904,
+      "classification_accuracy": 1.0,
+      "support": 14
+    },
+    "book": {
+      "ap50": 1.0,
+      "mean_iou_all_positives": 0.7167882435023785,
+      "classification_accuracy": 1.0,
+      "support": 16
+    },
+    "mouse": {
+      "ap50": 0.9603960396039604,
+      "mean_iou_all_positives": 0.7380724087838204,
+      "classification_accuracy": 0.967741935483871,
+      "support": 31
+    }
+  },
+  "validation_by_source": {
+    "https://storage.googleapis.com/openimages/web/download_v7.html": {
+      "images": 322,
+      "map50_present_classes": 0.2804542562770916,
+      "mean_iou_all_positives": 0.435508285731252,
+      "median_iou_all_positives": 0.47216811776161194,
+      "classification_accuracy_all_positives": 0.6796116504854369,
+      "accepted_detection_false_positive_rate": 0.0
+    },
+    "https://storage.googleapis.com/openimages/web/extended.html": {
+      "images": 19,
+      "map50_present_classes": 0.36014851485148514,
+      "mean_iou_all_positives": 0.6399715731018468,
+      "median_iou_all_positives": 0.6226465106010437,
+      "classification_accuracy_all_positives": 0.42105263157894735,
+      "accepted_detection_false_positive_rate": null
+    },
+    "webcam_s1 owner red demo surface": {
+      "images": 103,
+      "map50_present_classes": 0.7402894135567403,
+      "mean_iou_all_positives": 0.655993203906452,
+      "median_iou_all_positives": 0.6993100047111511,
+      "classification_accuracy_all_positives": 0.9882352941176471,
+      "accepted_detection_false_positive_rate": 0.16666666666666666
+    }
+  },
+  "selection_source": "webcam",
+  "test_used_for_selection": false,
+  "quantized": false,
+  "fpga_tested": false
+}

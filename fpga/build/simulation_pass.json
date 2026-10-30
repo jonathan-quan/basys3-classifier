@@ -1,0 +1,6 @@
+{
+    "model_id_hex":  "d70fd5dfdfad0b31",
+    "vectors":  3,
+    "checks":  "Every convolution byte, pooled byte, logit and confidence",
+    "passed":  true
+}

@@ -1,0 +1,62 @@
+{
+  "counts": {
+    "train": {
+      "positive": [
+        407,
+        465,
+        700,
+        298
+      ],
+      "negative": 64
+    },
+    "val": {
+      "positive": [
+        19,
+        93,
+        152,
+        64
+      ],
+      "negative": 13
+    },
+    "test": {
+      "positive": [
+        20,
+        106,
+        148,
+        67
+      ],
+      "negative": 13
+    }
+  },
+  "total": 2629,
+  "groups": 1523,
+  "annotation_status": {
+    "human_verified": 129,
+    "source_ground_truth": 2500
+  },
+  "sources": {
+    "https://storage.googleapis.com/openimages/web/download_v7.html": 2183,
+    "https://github.com/phonght32/yoloV2-detectRubik": 407,
+    "https://storage.googleapis.com/openimages/web/extended.html": 39
+  },
+  "quarantined": [],
+  "exact_duplicates_removed": [],
+  "incomplete_pilot": false,
+  "instance_disjoint": false,
+  "manifest_sha256": "d184fb960b930f57726a715b32f54c4bb9a39278dec6201e9e89aa050a878bb4",
+  "inherited_manifest": "detection\\data\\full_manifest.jsonl",
+  "inherited_image_roles": 2630,
+  "annotation_qa_exclusions": [
+    {
+      "id": "original_86ce8e691f7824bf",
+      "reason": "Annotation QA: reviewed as background, but a clearly visible Rubiks Cube is present. Quarantined; no automatic relabel or guessed box."
+    }
+  ],
+  "data_signature_sha256": "ce4e71ac28f5c9c985fd9a8e37f283a1864419342d30912c1af7c07dd239b68e",
+  "limitations": [
+    "Cube webcam source kept entirely train-only.",
+    "No personal webcam benchmark exists.",
+    "Public source metadata cannot prove all unknown capture/physical instance independence.",
+    "Reviewed original classifier val/test images are legacy benchmarks, not fresh detector holdouts."
+  ]
+}

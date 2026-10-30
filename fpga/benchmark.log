@@ -1,0 +1,21 @@
+Hardware frames checked 25/490 | correct 19/25
+Hardware frames checked 50/490 | correct 39/50
+Hardware frames checked 75/490 | correct 62/75
+Hardware frames checked 100/490 | correct 71/100
+Hardware frames checked 125/490 | correct 88/125
+Hardware frames checked 150/490 | correct 105/150
+Hardware frames checked 175/490 | correct 116/175
+Hardware frames checked 200/490 | correct 136/200
+Hardware frames checked 225/490 | correct 156/225
+Hardware frames checked 250/490 | correct 174/250
+Hardware frames checked 275/490 | correct 188/275
+Hardware frames checked 300/490 | correct 202/300
+Hardware frames checked 325/490 | correct 219/325
+Hardware frames checked 350/490 | correct 243/350
+Hardware frames checked 375/490 | correct 268/375
+Hardware frames checked 400/490 | correct 291/400
+Hardware frames checked 425/490 | correct 314/425
+Hardware frames checked 450/490 | correct 337/450
+Hardware frames checked 475/490 | correct 358/475
+Hardware frames checked 490/490 | correct 372/490
+HARDWARE BENCHMARK COMPLETE {"examples": 490, "hardware_accuracy": 0.7591836734693878, "correct": 372, "all_logits_and_scores_match_integer_reference": true, "model_identity": {"port": "COM6", "baud": 1000000, "model_id_hex": "d70fd5dfdfad0b31", "input": [96, 96, 3]}, "confusion_matrix": [[27, 5, 1, 1], [3, 96, 37, 12], [7, 20, 91, 20], [4, 4, 4, 158]], "per_class": {"rubiks_cube": {"examples": 34, "accuracy": 0.7941176470588235}, "pen": {"examples": 148, "accuracy": 0.6486486486486487}, "book": {"examples": 138, "accuracy": 0.6594202898550725}, "mouse": {"examples": 170, "accuracy": 0.9294117647058824}}, "median_fpga_inference_ms": 36.74813, "median_uart_roundtrip_ms": 323.16260000004604, "total_verification_seconds": 164.82051779999995, "scope": "Actual FPGA inference on the original frozen public-photo classifier test set; not a personal-object webcam accuracy measurement."}

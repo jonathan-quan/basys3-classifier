@@ -1,0 +1,80 @@
+{
+  "experiment": "w128_sa",
+  "channels": [
+    16,
+    32,
+    64,
+    96
+  ],
+  "context": 2,
+  "size": 128,
+  "head": "softargmax",
+  "transfer": null,
+  "bn": true,
+  "args": {
+    "manifest": "C:\\Users\\ndaqu\\Documents\\Basys3Classifier\\detection\\data\\training_manifest.jsonl",
+    "experiment": "w128_sa",
+    "output": "C:\\Users\\ndaqu\\Documents\\Basys3Classifier\\detection\\runs\\improved_v1_w128_sa",
+    "classifier": "C:\\Users\\ndaqu\\Documents\\Basys3Classifier\\best_model.pth",
+    "epochs": 150,
+    "batch_size": 64,
+    "lr": 0.002,
+    "transfer_lr_scale": 0.25,
+    "ema": 0.998,
+    "zoom": 0.5,
+    "rehearsal": true,
+    "rehearsal_weight": 0.5,
+    "device": "auto",
+    "seed": 42,
+    "limit": null,
+    "sweep": null,
+    "tag": "improved_v1",
+    "output_root": "C:\\Users\\ndaqu\\Documents\\Basys3Classifier\\detection\\runs",
+    "final_test": null
+  },
+  "counts": {
+    "train": {
+      "positive": [
+        407,
+        465,
+        700,
+        298
+      ],
+      "negative": 64
+    },
+    "val": {
+      "positive": [
+        19,
+        93,
+        152,
+        64
+      ],
+      "negative": 13
+    },
+    "test": {
+      "positive": [
+        20,
+        106,
+        148,
+        67
+      ],
+      "negative": 13
+    }
+  },
+  "inference_parameters": 31977,
+  "macs": 4782880,
+  "manifest_sha256": "d184fb960b930f57726a715b32f54c4bb9a39278dec6201e9e89aa050a878bb4",
+  "environment": {
+    "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+    "executable": "C:\\Users\\ndaqu\\Documents\\Basys3Classifier\\.venv\\Scripts\\python.exe",
+    "platform": "Windows-10-10.0.26300-SP0",
+    "torch": "2.14.1+cu130",
+    "cuda_build": "13.0",
+    "cuda_available": true,
+    "gpu": "NVIDIA GeForce RTX 5060 Laptop GPU",
+    "gpu_vram_bytes": 8546484224,
+    "selected_device": "cuda"
+  },
+  "selection": "Validation mean AP50 over present classes, tie-break all-positive mean IoU. Test never used.",
+  "load_seconds": 38.90004019999992
+}

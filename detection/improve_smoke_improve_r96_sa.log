@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\ndaqu\Documents\Basys3Classifier\detection\improve.py", line 558, in <module>
+    main()
+  File "C:\Users\ndaqu\Documents\Basys3Classifier\detection\improve.py", line 554, in main
+    train(a)
+  File "C:\Users\ndaqu\Documents\Basys3Classifier\detection\improve.py", line 414, in train
+    plain = Detector(**exp, bn=False)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: __main__.Detector() got multiple values for keyword argument 'bn'

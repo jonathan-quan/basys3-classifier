@@ -1,0 +1,4 @@
+{"percentile": 0.999, "validation_accuracy": 0.7152173913043478, "seconds": 1.1280969999997978}
+{"percentile": 0.9999, "validation_accuracy": 0.7239130434782609, "seconds": 1.1408425999998144}
+{"percentile": 1.0, "validation_accuracy": 0.7108695652173913, "seconds": 1.074582599999303}
+Exported C:\Users\ndaqu\Documents\Basys3Classifier\fpga\export validation accuracy 0.7239130434782609

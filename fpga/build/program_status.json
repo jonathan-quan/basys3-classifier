@@ -1,0 +1,1 @@
+{"programmed":true,"method":"volatile JTAG (program_hw_devices)","spi_flash_touched":false,"target":"localhost:3121/xilinx_tcf/Digilent/210183BF7BDEA","device":"xc7a35t_0","done_pin":"1","bitstream":"fpga/build/basys3_classifier.bit"}

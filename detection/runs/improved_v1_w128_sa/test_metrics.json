@@ -1,0 +1,109 @@
+{
+  "images": 354,
+  "positive_images": 341,
+  "negative_images": 13,
+  "classification_accuracy_all_positives": 0.6334310850439883,
+  "classification_accuracy_definition": "Argmax over four classes on all positive frames; ignores abstention. Detection recall counts abstentions as misses.",
+  "presence_precision": 0.9660056657223796,
+  "presence_recall": 1.0,
+  "presence_false_positive_rate": 0.9230769230769231,
+  "accepted_detection_false_positive_rate": 0.15384615384615385,
+  "detection_precision": 0.47,
+  "detection_recall": 0.2756598240469208,
+  "detection_tp": 94,
+  "detection_fp": 106,
+  "detection_fn": 247,
+  "mean_iou_all_positives": 0.40633754431211344,
+  "median_iou_all_positives": 0.3880578875541687,
+  "mean_iou_matched_only": 0.7334234010665974,
+  "map50_present_classes": 0.25975177886917733,
+  "map50_95_present_classes": 0.12153351086902082,
+  "missing_positive_classes": [],
+  "iou_threshold": 0.5,
+  "joint_score_threshold": 0.53,
+  "presence_threshold": 0.01,
+  "per_class": {
+    "rubiks_cube": {
+      "support": 20,
+      "classification_accuracy": 0.55,
+      "classification_precision": 0.6111111111111112,
+      "mean_iou_all_positives": 0.6345140889286995,
+      "detection_precision": 0.6666666666666666,
+      "detection_recall": 0.4,
+      "true_positives": 8,
+      "false_positives": 4,
+      "false_negatives": 12,
+      "ap50": 0.429042904290429,
+      "ap50_95": 0.22188118811881186
+    },
+    "pen": {
+      "support": 106,
+      "classification_accuracy": 0.5943396226415094,
+      "classification_precision": 0.5779816513761468,
+      "mean_iou_all_positives": 0.290317484739957,
+      "detection_precision": 0.2857142857142857,
+      "detection_recall": 0.16981132075471697,
+      "true_positives": 18,
+      "false_positives": 45,
+      "false_negatives": 88,
+      "ap50": 0.1071165097369243,
+      "ap50_95": 0.03430468949530836
+    },
+    "book": {
+      "support": 148,
+      "classification_accuracy": 0.7432432432432432,
+      "classification_precision": 0.7189542483660131,
+      "mean_iou_all_positives": 0.5174613808662429,
+      "detection_precision": 0.6555555555555556,
+      "detection_recall": 0.39864864864864863,
+      "true_positives": 59,
+      "false_positives": 31,
+      "false_negatives": 89,
+      "ap50": 0.41240032337821564,
+      "ap50_95": 0.19381148891105998
+    },
+    "mouse": {
+      "support": 67,
+      "classification_accuracy": 0.47761194029850745,
+      "classification_precision": 0.5245901639344263,
+      "mean_iou_all_positives": 0.27631168777936266,
+      "detection_precision": 0.2571428571428571,
+      "detection_recall": 0.13432835820895522,
+      "true_positives": 9,
+      "false_positives": 26,
+      "false_negatives": 58,
+      "ap50": 0.09044737807114044,
+      "ap50_95": 0.036136676950903106
+    }
+  },
+  "classification_confusion_matrix": [
+    [
+      11,
+      3,
+      3,
+      3
+    ],
+    [
+      3,
+      63,
+      23,
+      17
+    ],
+    [
+      2,
+      27,
+      110,
+      9
+    ],
+    [
+      2,
+      16,
+      17,
+      32
+    ]
+  ],
+  "metric_scope": "Custom single-object AP with 101 recall points and at most one prediction per image; missing classes excluded, not silently scored as zero.",
+  "split": "test",
+  "run": "C:\\Users\\ndaqu\\Documents\\Basys3Classifier\\detection\\runs\\improved_v1_w128_sa",
+  "thresholds_from_validation": true
+}

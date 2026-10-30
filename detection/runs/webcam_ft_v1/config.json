@@ -1,0 +1,94 @@
+{
+  "experiment": "w128_sa",
+  "channels": [
+    16,
+    32,
+    64,
+    96
+  ],
+  "context": 2,
+  "size": 128,
+  "head": "softargmax",
+  "transfer": null,
+  "bn": false,
+  "args": {
+    "manifest": "C:\\Users\\ndaqu\\Documents\\Basys3Classifier\\detection\\data\\training_manifest.jsonl",
+    "experiment": "w128_sa",
+    "output": "detection\\runs\\webcam_ft_v1",
+    "classifier": "C:\\Users\\ndaqu\\Documents\\Basys3Classifier\\best_model.pth",
+    "epochs": 80,
+    "batch_size": 64,
+    "lr": 0.0005,
+    "transfer_lr_scale": 0.25,
+    "ema": 0.998,
+    "zoom": 0.5,
+    "rehearsal": true,
+    "rehearsal_weight": 0.5,
+    "device": "auto",
+    "seed": 42,
+    "limit": null,
+    "sweep": null,
+    "tag": "improved_v1",
+    "output_root": "C:\\Users\\ndaqu\\Documents\\Basys3Classifier\\detection\\runs",
+    "final_test": null,
+    "extra_manifest": [
+      "detection\\data\\webcam_s1_manifest.jsonl"
+    ],
+    "init": "detection\\runs\\improved_v1_w128_sa\\best_detector.pth",
+    "select_source": "webcam"
+  },
+  "counts": {
+    "train": {
+      "positive": [
+        487,
+        543,
+        803,
+        424
+      ],
+      "negative": 138
+    },
+    "val": {
+      "positive": [
+        43,
+        107,
+        168,
+        95
+      ],
+      "negative": 31
+    },
+    "test": {
+      "positive": [
+        20,
+        106,
+        148,
+        67
+      ],
+      "negative": 13
+    }
+  },
+  "init": {
+    "checkpoint": "detection\\runs\\improved_v1_w128_sa\\best_detector.pth",
+    "checkpoint_sha256": "179ef422b4f5f42ef97fa54ba891544729fcc2e3a09570f396e42f1271463bab",
+    "epoch": 97
+  },
+  "extra_manifests": {
+    "detection\\data\\webcam_s1_manifest.jsonl": "e3246dfd35f2a7226191470050ab39ac55706a9536f76234a843e29fe86b07b1"
+  },
+  "selection_source": "webcam",
+  "inference_parameters": 31977,
+  "macs": 4782880,
+  "manifest_sha256": "d184fb960b930f57726a715b32f54c4bb9a39278dec6201e9e89aa050a878bb4",
+  "environment": {
+    "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+    "executable": "C:\\Users\\ndaqu\\Documents\\Basys3Classifier\\.venv\\Scripts\\python.exe",
+    "platform": "Windows-10-10.0.26300-SP0",
+    "torch": "2.14.1+cu130",
+    "cuda_build": "13.0",
+    "cuda_available": true,
+    "gpu": "NVIDIA GeForce RTX 5060 Laptop GPU",
+    "gpu_vram_bytes": 8546484224,
+    "selected_device": "cuda"
+  },
+  "selection": "Validation mean AP50 over present classes, tie-break all-positive mean IoU. Test never used.",
+  "load_seconds": 36.00139459999991
+}

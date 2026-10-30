@@ -1,0 +1,53 @@
+{
+  "examples": 490,
+  "int8_test_accuracy": 0.7591836734693878,
+  "fp32_historical_test_accuracy": 0.7653061224489796,
+  "change_percentage_points": -0.6122448979591799,
+  "confusion_matrix": [
+    [
+      27,
+      5,
+      1,
+      1
+    ],
+    [
+      3,
+      96,
+      37,
+      12
+    ],
+    [
+      7,
+      20,
+      91,
+      20
+    ],
+    [
+      4,
+      4,
+      4,
+      158
+    ]
+  ],
+  "per_class": {
+    "rubiks_cube": {
+      "support": 34,
+      "accuracy": 0.7941176470588235
+    },
+    "pen": {
+      "support": 148,
+      "accuracy": 0.6486486486486487
+    },
+    "book": {
+      "support": 138,
+      "accuracy": 0.6594202898550725
+    },
+    "mouse": {
+      "support": 170,
+      "accuracy": 0.9294117647058824
+    }
+  },
+  "quantization_selected_on_validation_only": true,
+  "hardware_accuracy_independently_measured": false,
+  "note": "Integer software reference on the original frozen classifier test set. Hardware agreement must be established separately."
+}

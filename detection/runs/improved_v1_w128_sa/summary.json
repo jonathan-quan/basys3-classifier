@@ -1,0 +1,50 @@
+{
+  "experiment": "w128_sa",
+  "best_epoch": 97,
+  "epochs": 150,
+  "training_seconds": 1297.6411845999996,
+  "inference_parameters": 31977,
+  "macs": 4782880,
+  "input_size": 128,
+  "score_threshold_selected_on_validation": 0.53,
+  "presence_threshold_selected_on_validation": 0.01,
+  "validation": {
+    "map50_present_classes": 0.23685405750663902,
+    "map50_95_present_classes": 0.09202862889683647,
+    "mean_iou_all_positives": 0.43830181844887417,
+    "median_iou_all_positives": 0.46737174689769745,
+    "classification_accuracy_all_positives": 0.6859756097560976,
+    "detection_precision": 0.48826291079812206,
+    "detection_recall": 0.3170731707317073,
+    "accepted_detection_false_positive_rate": 0.15384615384615385
+  },
+  "validation_per_class": {
+    "rubiks_cube": {
+      "ap50": 0.21635913591359135,
+      "mean_iou_all_positives": 0.7020427286624908,
+      "classification_accuracy": 0.3684210526315789,
+      "support": 19
+    },
+    "pen": {
+      "ap50": 0.20101332031699412,
+      "mean_iou_all_positives": 0.34167822564561523,
+      "classification_accuracy": 0.6559139784946236,
+      "support": 93
+    },
+    "book": {
+      "ap50": 0.4613969091095019,
+      "mean_iou_all_positives": 0.5601304019112018,
+      "classification_accuracy": 0.7763157894736842,
+      "support": 152
+    },
+    "mouse": {
+      "ap50": 0.06864686468646865,
+      "mean_iou_all_positives": 0.2110670082984143,
+      "classification_accuracy": 0.609375,
+      "support": 64
+    }
+  },
+  "test_used_for_selection": false,
+  "quantized": false,
+  "fpga_tested": false
+}
