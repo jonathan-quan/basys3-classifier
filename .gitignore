@@ -9,3 +9,18 @@ runs/
 *.pth
 *.part
 
+
+# Recording demo outputs (videos and test renders stay local)
+recordings/
+fpga_viz/build/rec_test/
+fpga_viz/build/*.png
+fpga_viz/build/*.jpg
+fpga_viz/build/*.mp4
+fpga_viz/build/*.dcp
+fpga_viz/logs/
+xsim.dir/
+fpga_viz/det_build/*.dcp
+fpga_viz/build/*.out
+fpga_viz/build/*_backup.py
+fpga_viz/build/*_before_sync_fix.py
+fpga_viz/build/detector_selftest.json

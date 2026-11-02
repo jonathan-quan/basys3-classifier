@@ -1,16 +1,32 @@
-# Basys 3 object classifier — Python training project
+# Basys 3 object recognition — CNNs running in FPGA hardware
 
-Train a small CNN from scratch on 96×96 RGB images. Class order is permanently
-`rubiks_cube`, `pen`, `book`, `mouse` (computer mouse, not the animal).
-There is no FPGA implementation, synthesis, Verilog, pretrained network, or
-automatic architecture upgrade in this project.
+Small INT8 neural networks running entirely in the fabric of a Digilent Basys 3
+(Artix-7 XC7A35T, 100 MHz): no soft CPU, no HLS, no laptop neural inference. The laptop
+webcam captures a frame, sends it over USB UART, and the FPGA returns the answer.
+Classes: Rubik's cube, pen, book, computer mouse.
+
+| Design | What runs on the FPGA | Verified results |
+|---|---|---|
+| [`fpga/`](fpga/README.md) classifier | 9-layer CNN on 96×96 RGB, 6,084 parameters | 75.92% on 490 test photos, every output bit-exact with the integer reference; 36.75 ms per image; 2,636 LUTs, 7 DSPs |
+| [`fpga_det/`](fpga_det/README.md) box detector | 11-layer CNN on 128×128 RGB + soft-argmax box head, 31,977 parameters, 4.78M MACs | class + box per frame; webcam validation mAP50 0.741, class accuracy 98.8%; bit-exact on the board; 201 ms per image |
+| [`fpga_viz/`](fpga_viz/README.md) recording demo | either design plus an observation-only telemetry block | live chip map from Vivado's real placement, per-layer activation maps and timing read back from the FPGA every frame, all re-checked bit-exact on the laptop |
+
+Each RTL design is checked in simulation against a bit-exact NumPy integer reference
+before it is built, and the builds refuse to produce a bitstream that misses 100 MHz
+timing. Quick start with a board: `ProgramDetectorDemo.cmd`, then `RecordDemo.cmd`
+(see [`fpga_viz/README.md`](fpga_viz/README.md)).
+
+## Training the classifier (`classifier/`)
+
+The sections below document how the classifier was trained from scratch on 96×96 RGB
+images. Class order is permanently `rubiks_cube`, `pen`, `book`, `mouse` (computer
+mouse, not the animal). The training code itself uses no FPGA tools or pretrained network.
 
 **Completed results:** see [RESULTS.md](RESULTS.md). The selected `best_model.pth`
 has 6,084 inference parameters and measured 73.48% validation / 76.53% test accuracy.
 The original-size reference is preserved as `baseline_3252.pth` (62.83% validation /
 67.96% test). The larger model was chosen using validation before test evaluation.
 These public-data results do not establish accuracy on your own physical objects.
-Double-click `Webcam.cmd` to try the selected model. Camera trials remain to be done.
 
 ## Environment and quick commands
 

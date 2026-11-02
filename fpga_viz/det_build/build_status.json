@@ -1,0 +1,1 @@
+{"model_id_hex":"9f3a486d6dae483d","part":"xc7a35tcpg236-1","clock_hz":100000000,"wns_ns":0.166,"whs_ns":0.030,"drc_errors":0,"lut_cells":7347,"ramb36":35,"ramb18":3,"bitstream":"fpga_viz/det_build/basys3_detector_viz.bit"}

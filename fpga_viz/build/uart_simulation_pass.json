@@ -1,0 +1,5 @@
+{
+    "model_id_hex":  "d70fd5dfdfad0b31",
+    "checks":  "original packets byte-identical; telemetry readout equals integer reference",
+    "passed":  true
+}

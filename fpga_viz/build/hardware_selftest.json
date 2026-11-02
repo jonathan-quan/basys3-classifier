@@ -1,0 +1,36 @@
+{
+  "port": "COM6",
+  "identity": {
+    "port": "COM6",
+    "baud": 1000000,
+    "model_id_hex": "d70fd5dfdfad0b31",
+    "input": [
+      96,
+      96,
+      3
+    ]
+  },
+  "round_trip_ms_median": 316.8168500005777,
+  "telemetry_ms_median": 42.185150000477734,
+  "cases": [
+    {
+      "case": 0,
+      "class": "Book",
+      "frame_id": 3,
+      "telemetry_frame_id": 3
+    },
+    {
+      "case": 1,
+      "class": "Computer Mouse",
+      "frame_id": 5,
+      "telemetry_frame_id": 5
+    },
+    {
+      "case": 2,
+      "class": "Rubik's Cube",
+      "frame_id": 7,
+      "telemetry_frame_id": 7
+    }
+  ],
+  "all_passed": true
+}

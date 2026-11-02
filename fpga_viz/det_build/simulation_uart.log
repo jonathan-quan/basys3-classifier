@@ -1,0 +1,25 @@
+
+****** xsim v2026.1 (64-bit)
+  **** SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+  **** IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+  **** SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+  **** Start of session at: Mon Nov  2 15:14:00 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source xsim.dir/viz_det_uart_sim/xsim_script.tcl
+# xsim {viz_det_uart_sim} -autoloadwcfg -runall
+Time resolution is 1 ps
+run -all
+PASS HELLO unchanged
+PASS telemetry refused before any inference
+PASS corrupted CRC rejected
+PASS invalid image configuration rejected
+PASS detection result unchanged
+PASS telemetry: 11 layer stamps, pooled, 704 channel sums, 1664 heat bins and 256 attention weights match the reference
+ALL DETECTOR VIZ UART PACKETS MATCH
+$finish called at time : 764641720 ns : File "C:/Users/ndaqu/Documents/Basys3Classifier/fpga_viz/sim/tb_det_viz_uart.sv" Line 61
+run: Time (s): cpu = 00:00:00 ; elapsed = 00:00:57 . Memory (MB): peak = 229.016 ; gain = 0.000
+exit
+INFO: xsimkernel Simulation Memory Usage: 20420 KB (Peak: 20420 KB), Simulation CPU Usage: 56577 ms
+INFO: [Common 17-206] Exiting xsim at Mon Nov  2 15:14:58 2026...

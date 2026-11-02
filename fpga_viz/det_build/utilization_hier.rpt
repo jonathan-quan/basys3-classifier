@@ -1,0 +1,34 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2026.1 (win64) Build 6511674 Tue Jun 16 11:02:23 MDT 2026
+| Date         : Mon Nov  2 15:25:29 2026
+| Host         : admin running 64-bit major release  (build 9200)
+| Command      : report_utilization -hierarchical -file fpga_viz/det_build/utilization_hier.rpt
+| Design       : basys3_detector_viz
+| Device       : xc7a35tcpg236-1
+| Speed File   : -1
+| Design State : Routed
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Utilization Design Information
+
+Table of Contents
+-----------------
+1. Utilization by Hierarchy
+
+1. Utilization by Hierarchy
+---------------------------
+
++-------------------------+--------------------+------------+------------+---------+------+------+--------+--------+------------+
+|         Instance        |       Module       | Total LUTs | Logic LUTs | LUTRAMs | SRLs |  FFs | RAMB36 | RAMB18 | DSP Blocks |
++-------------------------+--------------------+------------+------------+---------+------+------+--------+--------+------------+
+| basys3_detector_viz     |              (top) |       6902 |       6678 |     224 |    0 | 2491 |     35 |      3 |          7 |
+|   (basys3_detector_viz) |              (top) |         33 |         33 |       0 |    0 |  852 |      0 |      0 |          0 |
+|   u_core                |      detector_core |       6289 |       6087 |     202 |    0 | 1409 |     33 |      1 |          7 |
+|   u_rx                  |            uart_rx |        215 |        215 |       0 |    0 |   42 |      0 |      0 |          0 |
+|   u_tel                 | detector_telemetry |        311 |        289 |      22 |    0 |  158 |      2 |      2 |          0 |
+|   u_tx                  |            uart_tx |         57 |         57 |       0 |    0 |   30 |      0 |      0 |          0 |
++-------------------------+--------------------+------------+------------+---------+------+------+--------+--------+------------+
+* Note: The sum of lower-level cells may be larger than their parent cells total, due to cross-hierarchy LUT combining
+
+

@@ -1,0 +1,5 @@
+{
+    "model_id_hex":  "9f3a486d6dae483d",
+    "checks":  "tapped detector core: 11 layers, pooled, heat, attention, outputs on 5 frames",
+    "passed":  true
+}

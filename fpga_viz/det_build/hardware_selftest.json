@@ -1,0 +1,16 @@
+{
+  "port": "COM6",
+  "identity": {
+    "port": "COM6",
+    "baud": 1000000,
+    "model_id_hex": "9f3a486d6dae483d",
+    "input": [
+      128,
+      128,
+      3
+    ]
+  },
+  "detect_ms_median": 703.7312499978725,
+  "telemetry_ms_median": 83.13195000118867,
+  "all_passed": true
+}
